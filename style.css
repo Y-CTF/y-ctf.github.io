@@ -4,17 +4,15 @@
 	--main-light-gray: #fafafafa;
 }
 
-h1 {
-	padding-top: 12vh; /* to fix navbar over title when clicking on a sidebar link*/
+.segment > h1 {
+	padding-top: 14vh; /* to fix navbar over title when clicking on a sidebar link*/
 	font-size: 32px;
 }
 
-p {
-	height: 200vh;
-}
 
 body {
 	background-color: var(--main-bg-color);
+	font-family: 'Quantico', sans-serif;
 }
 
 nav {
@@ -39,12 +37,10 @@ nav .sidenav-trigger, .sidenav>.sidenav-close { /* open/close sidenav */
 	color:var(--main-light-gray);
 	cursor:pointer;
 }
-nav .logo-wrapper {
+nav .logo-wrapper, nav .logo {
 	height: 8vh;
 }
-nav .logo {
-	height: inherit;
-}
+
 nav .links {
 	flex-grow: 2;
 	display:flex;
@@ -58,16 +54,17 @@ nav ul a {
 	font-weight: bold;
 	text-align: center;
 	line-height: 24px;
+	color: var(--main-bg-color)
 }
-nav ul a:hover {
+nav ul a:hover, .sidenav ul a:hover {
 	background: none;
+	color: var(--main-light-gray);
 }
 
 nav .lang {
 	font-size:12px;
-	color: var(--main-light-gray);
+	color: var(--main-bg-color);
 }
-
 
 .sidenav {
 	background-color: var(--main-dark-color);
@@ -118,8 +115,6 @@ nav .lang {
 }
 
 .pres-image {
-	max-height:50vh;
+	max-height:45vh;
 	max-width:100%;
-	margin-left:auto;
-	margin-right: auto;
 }
