@@ -22,8 +22,9 @@ nav {
 	border-bottom: 3px solid var(--main-light-gray);
 	color: var(--main-bg-color);
 	box-shadow: none;
-	padding: 1vw 2vw 1vh 2vh;
-	height: 10vh
+	padding: 1vw 2vh 1vw 2vh;
+	height: 10vh;
+	min-height:80px;
 }
 
 .nav-wrapper {
@@ -56,7 +57,7 @@ nav ul a {
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 2vh;
+	line-height: 24px;
 }
 nav ul a:hover {
 	background: none;
