@@ -5,33 +5,44 @@ nav {
 	box-shadow: none;
 	padding: 1vw 2vh 1vw 2vh;
 	height: 10vh;
-	min-height:80px;
+	min-height: 80px;
 	font-family: 'Quantico', sans-serif;
+
+	transition: all 0.5s;
+}
+
+nav.scrollUp {
+	transform: translateY(-10vh);
 }
 
 .nav-wrapper {
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-nav .sidenav-trigger, .sidenav>.sidenav-close { /* open/close sidenav */
+nav .sidenav-trigger,
+.sidenav>.sidenav-close {
+	/* open/close sidenav */
 	font-size: 36px;
 	float: right;
-	color:var(--main-light-gray);
-	cursor:pointer;
+	color: var(--main-light-gray);
+	cursor: pointer;
 }
-nav .logo-wrapper, nav .logo {
+
+nav .logo-wrapper,
+nav .logo {
 	height: 8vh;
 }
 
 nav .links {
 	flex-grow: 2;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 5vw;
 }
+
 nav ul a {
 	max-width: 16vw;
 	font-size: 20px;
@@ -40,13 +51,15 @@ nav ul a {
 	line-height: 24px;
 	color: var(--main-bg-color)
 }
-nav ul a:hover, .sidenav ul a:hover {
+
+nav ul a:hover,
+.sidenav ul a:hover {
 	background: none;
 	color: var(--main-light-gray);
 }
 
 nav .lang {
-	font-size:12px;
+	font-size: 12px;
 	color: var(--main-bg-color);
 }
 
@@ -54,8 +67,8 @@ nav .lang {
 	background-color: var(--main-dark-color);
 	border-bottom: 2px solid var(--main-light-gray);
 	padding: 0;
-	width:100%;
-	height:fit-content;
+	width: 100%;
+	height: fit-content;
 	box-shadow: none;
 	padding: 4vh 10vw;
 }
@@ -67,17 +80,17 @@ nav .lang {
 
 .sidenav-links {
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 	justify-content: space-between;
-	margin:4vh 0 4vh 32px;
+	margin: 4vh 0 4vh 32px;
 }
 
 .sidenav-lang {
-	font-size:16px;
+	font-size: 16px;
 	color: var(--main-light-gray);
 }
 
-.sidenav li > a {
+.sidenav li>a {
 	display: table-cell;
 	vertical-align: middle;
 	height: 10vh;
@@ -87,9 +100,9 @@ nav .lang {
 }
 
 #sidenav-btn-close {
-	position:absolute;
-	right:10vw;
-	padding:0;
+	position: absolute;
+	right: 10vw;
+	padding: 0;
 	font-size: 24px;
-	color:var(--main-bg-color);
+	color: var(--main-bg-color);
 }
