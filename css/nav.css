@@ -5,11 +5,14 @@ nav {
 	box-shadow: none;
 	padding: 1vw 2vh 1vw 2vh;
 	height: 10vh;
-	width:100vw;
+	width: 100vw;
 	min-height: 80px;
-	font-family: 'Quantico', sans-serif;
-
 	transition: all 0.5s;
+}
+
+nav,
+.sidenav {
+	font-family: 'Quantico', sans-serif;
 }
 
 nav.scrollUp {
@@ -96,14 +99,16 @@ nav .lang {
 	width: 100vw;
 	color: var(--main-bg-color);
 	font-size: 24px;
+
 }
 
 
 #sidebar {
 	max-width: 100vw;
-	width:auto;
-	left:0;
+	width: auto;
+	left: 0;
 }
+
 #sidenav-btn-close {
 	position: absolute;
 	right: 10vw;
