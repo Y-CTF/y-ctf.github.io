@@ -5,6 +5,7 @@ nav {
 	box-shadow: none;
 	padding: 1vw 2vh 1vw 2vh;
 	height: 10vh;
+	width:100vw;
 	min-height: 80px;
 	font-family: 'Quantico', sans-serif;
 
@@ -66,8 +67,6 @@ nav .lang {
 .sidenav {
 	background-color: var(--main-dark-color);
 	border-bottom: 2px solid var(--main-light-gray);
-	padding: 0;
-	width: 100%;
 	height: fit-content;
 	box-shadow: none;
 	padding: 4vh 10vw;
@@ -82,7 +81,7 @@ nav .lang {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 4vh 0 4vh 32px;
+	margin: 4vh 2vh 4vh 2vh;
 }
 
 .sidenav-lang {
@@ -99,6 +98,12 @@ nav .lang {
 	font-size: 24px;
 }
 
+
+#sidebar {
+	max-width: 100vw;
+	width:auto;
+	left:0;
+}
 #sidenav-btn-close {
 	position: absolute;
 	right: 10vw;

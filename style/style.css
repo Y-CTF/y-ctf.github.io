@@ -5,6 +5,10 @@
 	scroll-padding-top: 14vh;
 }
 
+html {
+	width:100vw;
+}
+
 h1 {
 	margin-top: 0px;
 	margin-bottom: 1em;
