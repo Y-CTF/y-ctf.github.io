@@ -6,16 +6,22 @@
 	<title>Y-CTF</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<!-- Normalize -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 	<!-- Materialize -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link rel="stylesheet" href="style.css">
+	<!-- Google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Electrolize&family=Hind&family=Quantico&family=Titillium+Web&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Aldrich&family=Electrolize&family=Hind&family=Quantico&family=Titillium+Web&display=swap"
+		rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/nav.css">
 </head>
 
 <body>
@@ -61,30 +67,127 @@
 	</div>
 
 	<div class="content">
-		<div class="center"><img class="pres-image" src="images/logos/logo-dark.png"/></div>
-		<div class="segment">
-			<h1 id="a-propos">À propos du club</h1>
-			<p>Le club CTF a pour objectif de promouvoir la sécurité et les CTFs au sein de la HEIG-VD via des entraînements, des conférences, des participations aux CTFs, etc. Les activités du club seront bien entendu adaptées à la situation actuelle.
-			Le Comité est à votre disposition pour toute question.</p>
-			<p>Vous pouvez nous contacter via Telegram ou par email à l'adresse suivante : ryan.sauge@heig-vd.ch</p>
-			
-			<p>Logo: Nous tenons à remercier Eloïse Coderay qui en est la réalisatrice. Nous vous encourageons vivement à aller voir son travail sur son compte instagram: @une_pluie_d_etoiles . Elle se fait connaître sous le pseudo "Yukina".</p>
-				
-			<hr/>Comité 2021-2022
-			<p>Alexandra Cerottini, Anthony David, David Pellissier, Léonard Besseau et Ryan Sauge</p>
+		<div class="center"><img class="pres-image" src="images/logos/logo-dark.png" /></div>
+		<div class="segment" id="a-propos">
+			<h1>À propos du club</h1>
+			<p>Le club Y-CTF est une association étudiante à but non lucratif créée en 2020 au sein de la HEIG-VD.</p>
+			<p>Son objectif est de promouvoir et introduire la sécurité informatique aux étudiants et étudiantes de
+				l'école.
+			</p>
+			<p>L'activité principale du club est de participer à des événements <a href="#ctf">CTF</a> en Suisse romande (Insomni'hack,
+				Black Alps) et la participation régulière à des CTF en ligne.<br />
+				Nous organisons également tout au long de l'année, selon les dispositions des membres et du comité, des
+				présentations sur divers sujets liés au ethical hacking, des workshops ainsi que des entraînements de
+				CTF.</p>
 		</div>
-		<div class="segment">
-			<h1 id="inscription">Inscription</h1>
-			<p></p>
+		<div class="separator"></div>
+		<div class="segment" id="inscription">
+			<h1>Inscription</h1>
+			<p>Tous les étudiants de diplômés de la HEIG-VD sont admis dans le club CTF. Les personnes de tous les
+				domaines d'études et de tout niveau en informatique sont les bienvenues.</p>
+			<p>L'inscription est annuelle, sans engagement de participation aux activités et il n'y a pas de cotisation
+				à payer.</p>
+			<p>Rejoignez-nous via ce formulaire qui vous donnera ensuite accès au serveur Discord et au groupe Telegram
+				du club:
+				<a
+					href='https://docs.google.com/forms/d/e/1FAIpQLSffs9HEAQFDkczBWn4l2FaaROjVf1JDYyrAMd8nbIKFTGFWTg/viewform'>https://docs.google.com/forms/d/e/1FAIpQLSffs9HEAQFDkczBWn4l2FaaROjVf1JDYyrAMd8nbIKFTGFWTg/viewform</a>
+			</p>
+			<p>&nbsp;</p>
+			<p>En cas de question, n'hésitez pas à contacter le ou la responsable des membres (voir infos de contact à
+				la
+				fin).</p>
 		</div>
-		<div class="segment">
-			<h1 id="ctf">Qu'est-ce qu'un CTF ?</h1>	
+		<div class="separator"></div>
+		<div class="segment" id="ctf">
+			<h1>Qu'est-ce qu'un CTF ?</h1>
+			<p>CTF (pour Capture The Flag) est une discipline compétitive de sécurité informatique. Il consiste à mettre
+				en pratique des techniques et outils dans le but résoudre des challenges de hacking et ainsi gagner des
+				points dans le classement du CTF.</p>
+			<p>Il existe plusieurs catégories de challenges, représentant chacune un aspect de la sécurité informatique.
+				On peut lister par exemple:</p>
+			<ul>
+				<li>Web : le but est de trouver une faille sur un site Internet et de l'exploiter pour obtenir le flag.
+				</li>
+				<li>Cryptanalyse : analyser un algorithme de cryptographie cassé afin de décrypter un message contenant
+					un flag.
+				</li>
+				<li>Cracking et pwn : analyser le comportement d'un programme binaire avec du reverse engineering, et
+					trouver des vulnérabilités à exploiter.</li>
+				<li>Forensic : analyser des fichiers tels que des logs d'incidents, des fichiers PDF, ou autres type de
+					fichiers qui pourraient être utiles en situation réelle lors de travail d'investigation suite à des
+					piratages informatiques.</li>
+				<li>OSINT : à partir d'informations données souvent énigmatiques, chercher sur Internet des traces de
+					comptes suspects qui peuvent contenir le flag.</li>
+				<li>Mobile : Des challenges le but est de cracker une application mobile Android.</li>
+
+			</ul>
+			<p>Les compétitions de CTF se font souvent en ligne, et ont généralement lieu sur un ou deux jours. Des CTF
+				sont
+				organisés presque tous les week-ends par diverses organisations. </p>
+			<p>Le site CTF Time répertorie tous les CTF et récupère le classements de chacun d'eux pour établir un
+				scoreboard global : <a href='https://ctftime.org/'>https://ctftime.org/</a></p>
+			<h2 id='par-où-commencer-'>Par où commencer ?</h2>
+			<p>Le CTF est une discipline très variée et qui peut être au premier abord intimidant pour les personnes
+				sans
+				expérience. Heureusement, on trouve beaucoup de ressources et d'outils pour s'entraîner. Par exemple ces
+				deux sites qui proposent des challenges variés:</p>
+			<ul>
+				<li><a href='https://tryhackme.com/'>https://tryhackme.com/</a></li>
+				<li><a href='https://www.root-me.org/'>https://www.root-me.org/</a></li>
+
+			</ul>
+			<p>L'outil presque indispensable au CTF et à la sécu informatique est l'OS Kali Linux. C'est une
+				distribution Linux créée pour le pentesting (audit de sécurité informatique) regroupant énormément
+				d'outils
+				et qui peut être installée dans une machine virtuelle. Il regroupe plein d'outils utiles pour le hacking
+				: <a href='https://www.kali.org/'>https://www.kali.org/</a></p>
+			<p>Un autre outil extrêmement utile au CTF est Cyberchef, qui regroupe différents outils de manipulation de
+				texte et
+				de fichier dans un seul site web : <a
+					href='https://gchq.github.io/CyberChef/'>https://gchq.github.io/CyberChef/</a></p>
+			<p>Nous avons créé une liste non exhaustive d'outils utiles pendant les CTF. N'hésitez pas à nous contacter
+				si vous souhaitez y contribuer : <a
+					href='https://docs.google.com/spreadsheets/d/1uePJ9nsLPX1dPAWzDEjnXoPl42vq4A-U-5ZiTY2R7DU/edit?usp=sharing'>https://docs.google.com/spreadsheets/d/1uePJ9nsLPX1dPAWzDEjnXoPl42vq4A-U-5ZiTY2R7DU/edit?usp=sharing</a>
+			</p>
+			<p>&nbsp;</p>
+			<p>Bien entendu, le but du club est la collaboration, alors n'hésitez pas à poser demander de l'aide Discord
+				!</p>
 		</div>
-		<div class="segment">
-			<h1 id="events">Activités & Événements</h1>
+		<div class="separator"></div>
+		<div class="segment" id="events">
+			<h1>Activités & Événements</h1>
+			<p>Les activités sont annoncées sur Telegram. Vous trouverez un historique des activités du club sur ce lien
+				: <a href='https://y-ctf.github.io/writeups/events'>https://y-ctf.github.io/writeups/events</a></p>
+			<p>Nous proposons des participations aux CTF en ligne environ une fois par mois, et organisons
+				occasionnellement des
+				workshops. La fréquence des activités dépend beaucoup de la charge de travail du comité et des membres.
+				Bien
+				sûr, la participation à ces activités ne sont pas obligatoires.</p>
+			<p>&nbsp;</p>
+			<p>Nous sommes ouverts à toutes les propositions d'activités et workshops !</p>
 		</div>
-		<div class="segment">
-			<h1 id="contact">Contact</h1>	
+		<div class="separator"></div>
+		<div class="segment" id="contact">
+			<h1>Plus d'informations</h1>
+			<h2 id='logo'>Logo</h2>
+			<p>Merci à Eloïse Coderay qui a créé toutes les versions du logo Y-CTF. Nous vous encourageons vivement à
+				aller voir
+				son travail sur son compte instagram: <code>@_une_pluie_d_etoiles_</code> . Elle se fait connaître sous
+				le
+				pseudo Yukina.</p>
+			<h2 id='comité-2021-2022'>Comité 2021-2022</h2>
+			<p>Notre comité est formé d'étudiants bénévoles:</p>
+			<ul>
+				<li>Ryan Sauge, Président, 3e année de bachelor</li>
+				<li>Anthony David, Trésorier, 2e année de bachelor</li>
+				<li>David Pellissier, Responsable des membres, 3e année de bachelor</li>
+				<li>Léonard Besseau, Responsable de l’infrastructure et du matériel, 3e année de bachelor</li>
+				<li>Alexandra Cerottini, Responsable de la communication, 3e année de bachelor</li>
+			</ul>
+			<p>&nbsp;</p>
+			<h2 id='statuts-de-lassociation'>Statuts de l'association</h2>
+			<p>Les statuts de l'association sont encore en validation auprès de l'école. Ils seront partagés aux membres
+				dès que prêts.</p>
 		</div>
 	</div>
 
@@ -94,7 +197,7 @@
 	// Load sidenav
 	document.addEventListener('DOMContentLoaded', function () {
 		var elems = document.querySelectorAll('.sidenav');
-		var instances = M.Sidenav.init(elems, { edge: "right" , draggable: false });
+		var instances = M.Sidenav.init(elems, { edge: "right", draggable: false });
 	});
 </script>
 
