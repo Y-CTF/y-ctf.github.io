@@ -3,7 +3,7 @@
 
 @import
 	"{{ site.theme }}",
-	"assets/css/nav.scss";
+	"{{site.url}}/assets/css/nav.scss";
 
 /** custom css **/
 
