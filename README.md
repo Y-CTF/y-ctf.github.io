@@ -5,10 +5,10 @@ This project contains the website for the Y-CTF club.
 ## Contribute
 
 ### Add an event
-TODO
+
 
 ### Add a post
-TODO
+
 
 ### Writeups
 
