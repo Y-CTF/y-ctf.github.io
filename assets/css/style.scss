@@ -1,3 +1,12 @@
+---
+--- 
+
+@import
+	"{{ site.theme }}",
+	"{{site.url}}/assets/css/nav.css";
+
+/** custom css **/
+
 :root {
 	--main-bg-color: #cccccc;
 	--main-dark-color: #20252c;
@@ -5,8 +14,17 @@
 	scroll-padding-top: 14vh;
 }
 
+.wrapper { 
+	max-width: -webkit-calc(100vw - (30px * 2)); 
+	max-width: calc(100vw - (30px * 2)); 
+	margin-right: auto; 
+	margin-left: auto; 
+	padding-right: 30px; 
+	padding-left: 30px; 
+}
+
 html {
-	width:100vw;
+	width: 100vw;
 }
 
 h1 {
@@ -25,11 +43,10 @@ h4 {
 	font-family: 'Quantico', sans-serif;
 }
 
-.segment>ul>li {
+.home ul>li {
 	list-style: disc;
 	margin-left: 2vw;
 }
-
 
 
 .separator {
@@ -46,7 +63,7 @@ body {
 }
 
 
-.content {
+.page-content {
 	margin: 10vh 5vw;
 }
 
@@ -56,9 +73,15 @@ body {
 }
 
 .announcement {
-	padding:2vh;
+	padding: 2vh;
 	border-radius: 10px;
 	border: 1px dashed var(--main-dark-color);
 	text-align: center;
 	width: fit-content;
 }
+
+.center { /* src:  https://www.w3schools.com/howto/howto_css_image_center.asp */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
