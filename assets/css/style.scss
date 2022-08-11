@@ -2,7 +2,6 @@
 --- 
 
 @import	"{{ site.theme }}";
-@import  "{{site.url}}/assets/css/nav.css";
 
 /** custom css **/
 
@@ -33,7 +32,7 @@ h1 {
 
 h2 {
 	font-size: 3rem;
-	margin-top: 12px;
+	margin-top: 24px;
 }
 
 h1,
