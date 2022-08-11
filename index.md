@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CTF club from HEIG-VD
+title: HEIG-VD club CTF 
 ---
 
 ![](assets/img/logos/logo-dark.png){:class="pres-image center"}
