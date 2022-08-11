@@ -49,7 +49,7 @@ Il existe plusieurs catégories de challenges, représentant chacune un aspect d
 
 Les compétitions de CTF se font souvent en ligne, et ont généralement lieu sur un ou deux jours. Des CTF sont organisés presque tous les week-ends par diverses organisations.
 
-Le site CTF Time répertorie tous les CTF et récupère le classements de chacun d'eux pour établir un scoreboard global : [https://ctftime.org/]()
+Le site CTF Time répertorie tous les CTF et récupère le classements de chacun d'eux pour établir un scoreboard global : [https://ctftime.org/](https://ctftime.org/)
 
 {% include separator.html %}
 
@@ -57,12 +57,12 @@ Le site CTF Time répertorie tous les CTF et récupère le classements de chacun
 
 Le CTF est une discipline très variée et qui peut être au premier abord intimidant pour les personnes sans expérience. Heureusement, on trouve beaucoup de ressources et d'outils pour s'entraîner. Par exemple ces deux sites qui proposent des challenges variés:
 
-- [https://tryhackme.com/]()
-- [https://www.root-me.org/]()
+- [https://tryhackme.com/](https://tryhackme.com/)
+- [https://www.root-me.org/](https://www.root-me.org/)
 
-L'outil presque indispensable au CTF et à la sécu informatique est l'OS Kali Linux. C'est une distribution Linux créée pour le pentesting (audit de sécurité informatique) regroupant énormément d'outils et qui peut être installée dans une machine virtuelle. Il regroupe plein d'outils utiles pour le hacking : [https://www.kali.org/]()
+L'outil presque indispensable au CTF et à la sécu informatique est l'OS Kali Linux. C'est une distribution Linux créée pour le pentesting (audit de sécurité informatique) regroupant énormément d'outils et qui peut être installée dans une machine virtuelle. Il regroupe plein d'outils utiles pour le hacking : [https://www.kali.org/](https://www.kali.org/)
 
-Un autre outil extrêmement utile au CTF est Cyberchef, qui regroupe différents outils de manipulation de texte et de fichier dans un seul site web : [https://gchq.github.io/CyberChef/]()
+Un autre outil extrêmement utile au CTF est Cyberchef, qui regroupe différents outils de manipulation de texte et de fichier dans un seul site web : [https://gchq.github.io/CyberChef/](https://gchq.github.io/CyberChef/)
 
 Nous avons créé une liste d'outils et ressources utiles pour les CTF, disponible [ici](https://docs.google.com/spreadsheets/d/1uePJ9nsLPX1dPAWzDEjnXoPl42vq4A-U-5ZiTY2R7DU/edit#gid=365690992&fvid=984731724). Tous les membres du club peuvent y contribuer via le salon Discord dédié.
 
@@ -74,7 +74,7 @@ Bien entendu, le but du club est la collaboration, alors n'hésitez pas à deman
 # Activités et événements
 {:#events}
 
-Les activités sont annoncées sur Telegram. Vous trouverez un historique des activités du club sur ce lien : [https://y-ctf.github.io/writeups/events]()
+Les activités sont annoncées sur Telegram. Vous trouverez un historique des CTF auquels nous avons participés sur le notre page [CTF Time](https://ctftime.org/team/120794). 
 
 Nous proposons des participations aux CTF en ligne environ une fois par mois, et organisons occasionnellement des workshops. La fréquence des activités dépend beaucoup de la charge de travail du comité et des membres. Bien sûr, la participation à ces activités ne sont pas obligatoires.
 
