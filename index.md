@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: default
+title: CTF club from HEIG-VD
 ---
 
 ![](assets/img/logos/logo-dark.png){:class="pres-image center"}
@@ -100,6 +101,19 @@ Notre comité est formé d'étudiants bénévoles:
 - David Pellissier, Responsable des membres, 3e année
 - Léonard Besseau, Responsable de l’infrastructure et du matériel, 3e année
 
-## Statuts de l'association
+## Comité 2022-2023
 
-Les statuts ont été approuvés par la Direction. Ils doivent maintenant être validés par l’AG pour entrer en vigueur.
+Bonjour à toutes et à tous,
+
+Jeudi 16 juin, le Comité 2022-2023 a été élu par la 1ère AG de l’association.
+
+Félicitation à Anthony David (réélection), Eliott Chytil, Céline Roger, Jean-François Pasche et Anthony Coke!
+
+Une belle équipe pour poursuivre l’aventure🔥
+
+Le nouveau Comité remplacera le Comité actuel dans le courant du mois d’août.
+
+
+## Statuts du club
+
+Les statuts du club approuvés pendant la 1ère AG sont diponibles ici: [Statuts Club CTF-2022-final.pdf](/assets/pdf/Statuts Club CTF-2022-final.pdf)

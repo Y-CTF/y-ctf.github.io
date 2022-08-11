@@ -4,13 +4,33 @@ This project contains the website for the Y-CTF club.
 
 ## Contribute
 
-### Add an event
+### Add a new page
+
+Any `.md` and `.html` file that have a *front matter* in the root dir will be published as a static page. More info: https://jekyllrb.com/docs/structure/
 
 
 ### Add a post
 
+In the directory `_posts`, add a `.md` or `.html` file matching the following name syntax: YEAR-MONTH-DAY-title
+
+
+Then add *front matter* like this: 
+
+```
+---
+layout: post
+title: example post
+author: me
+---
+```
+
+The site currently does not show the post index. To learn how to do it, see the documentation or take example on this: https://github.com/jekyll/minima/blob/master/_layouts/home.html
+
+Documentation: https://jekyllrb.com/docs/posts/
 
 ### Writeups
+
+The URL path /writeups is linked to the repository https://github.com/Y-CTF/writeups, which is a GitHub Pages using the same Jekyll theme as this website.
 
 
 ### Markdown syntax
