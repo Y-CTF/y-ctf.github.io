@@ -91,27 +91,43 @@ Nous sommes ouverts à toutes les propositions d'activités et workshops !
 
 Merci à Eloïse Coderay qui a créé toutes les versions du logo Y-CTF. Nous vous encourageons vivement à aller voir son travail sur son compte Instagram: [@_une_pluie_d_etoiles_](https://www.instagram.com/_une_pluie_d_etoiles_/). Elle se fait connaître sous le pseudo Yukina.
 
-## Comité 2021-2022
+## Comité 
 
-Notre comité est formé d'étudiants bénévoles:
+Notre comité est formé d'étudiants bénévoles.
 
-- Ryan Sauge, Président, 3e année
-- Alexandra Cerottini, Vice-présidente et responsable de la communication, 3e année
-- Anthony David, Trésorier, 2e année
-- David Pellissier, Responsable des membres, 3e année
-- Léonard Besseau, Responsable de l’infrastructure et du matériel, 3e année
+### 2022-2023
 
-## Comité 2022-2023
+-  Anthony Coke, Président
+-  Anthony David, Vice-Président et Responsable de l’infrastructure et du matériel
+-  Céline Roger, Trésorier
+-  Jean-François Pasche, Responsable de la communication
+-  Eliott Chytil, Responsable des membres
 
-Bonjour à toutes et à tous,
+### Ancien comité
 
-Jeudi 16 juin, le Comité 2022-2023 a été élu par la 1ère AG de l’association.
+#### Comité 2021-2022
 
-Félicitation à Anthony David (réélection), Eliott Chytil, Céline Roger, Jean-François Pasche et Anthony Coke!
+- Ryan Sauge, Président
+- Alexandra Cerottini, Vice-présidente et responsable de la communication
+- Anthony David, Trésorier
+- David Pellissier, Responsable des membres
+- Léonard Besseau, Responsable de l’infrastructure et du matériel
 
-Une belle équipe pour poursuivre l’aventure🔥
+#### Comité 2020-2021
 
-Le nouveau Comité remplacera le Comité actuel dans le courant du mois d’août.
+- Julien Béguin, Président
+- Ryan Sauge, Trésorier
+- Laurent Thoeny, Responsable de la communication
+- Tiffany Bonzon, Responsable des membres et du coaching
+- Laurent Scherer, Responsable de l’infrastructure et du matériel,
+
+#### Comité 2020
+
+- Edin Mujkanovic, Président
+- Daniel Oliveira Paiva, Trésorier
+- Ryan Sauge, Responsable de la communication
+- Victor Truan, Responsable des membres et du coaching
+- Mickael Bonjour, Responsable de l’infrastructure et du matériel
 
 
 ## Statuts du club
