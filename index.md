@@ -93,17 +93,23 @@ Merci à Eloïse Coderay qui a créé toutes les versions du logo Y-CTF. Nous vo
 
 ## Comité 
 
-Notre comité est formé d'étudiants bénévoles.
+Notre comité est formé d'étudiants bénévoles et d'un assistant (depuis Septembre 2023).
 
-### 2022-2023
+-  Anthony David, Président
+-  Céline Roger, Vice-Présidente
+-  Anthony Coke, Responsable membres, infrastructure, matériel & communication
+-  Damien Maier, Trésorier
+-  Axel Vallon, Assistant Y-Security
+
+### Ancien comité
+
+#### Comité 2022-2023
 
 -  Anthony Coke, Président
 -  Anthony David, Vice-Président et Responsable de l’infrastructure et du matériel
 -  Céline Roger, Trésorier
 -  Jean-François Pasche, Responsable de la communication
 -  Eliott Chytil, Responsable des membres
-
-### Ancien comité
 
 #### Comité 2021-2022
 
