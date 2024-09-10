@@ -25,7 +25,7 @@ Tous les étudiants de diplômés de la HEIG-VD sont admis dans le club CTF. Les
 
 L'inscription est annuelle, sans engagement de participation aux activités et il n'y a pas de cotisation à payer.
 
-Rejoignez-nous via ce formulaire qui vous donnera ensuite accès au serveur Discord et au groupe Telegram du club: [Inscription](https://docs.google.com/forms/d/e/1FAIpQLScrgiz5x8u4MnxjbhnJcdG3nKe-p1ip9v9nVkqYI-sS5DcsVA/viewform)
+Rejoignez-nous via ce formulaire qui vous donnera ensuite accès au serveur Discord et au groupe Telegram du club: [Inscription](https://docs.google.com/forms/d/e/1FAIpQLSdQ3DWtiLpi9OEljdBpNflYOw4kBDGMT1cAW-Gn4Feg8isLUA/viewform?usp=sf_link)
 
  
 
