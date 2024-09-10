@@ -97,7 +97,7 @@ Notre comité est formé d'étudiants bénévoles et d'un assistant (depuis Sept
 
 - Felix Breval, Président
 - Aubry Mongold, Vice-Président
-- Alexandre Shishmarov, Trésorier et responsable de la communication
+- Alexandre Shyshmarov, Trésorier et responsable de la communication
 - Grégoire Rista, responsable des membres, infrastructure et matériel 
 
 ### Ancien comité
