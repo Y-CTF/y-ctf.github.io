@@ -25,7 +25,7 @@ Tous les étudiants de diplômés de la HEIG-VD sont admis dans le club CTF. Les
 
 L'inscription est annuelle, sans engagement de participation aux activités et il n'y a pas de cotisation à payer.
 
-Rejoignez-nous via ce formulaire qui vous donnera ensuite accès au serveur Discord et au groupe Telegram du club: [Inscription](https://docs.google.com/forms/d/e/1FAIpQLSffs9HEAQFDkczBWn4l2FaaROjVf1JDYyrAMd8nbIKFTGFWTg/viewform)
+Rejoignez-nous via ce formulaire qui vous donnera ensuite accès au serveur Discord et au groupe Telegram du club: [Inscription](https://docs.google.com/forms/d/e/1FAIpQLScrgiz5x8u4MnxjbhnJcdG3nKe-p1ip9v9nVkqYI-sS5DcsVA/viewform)
 
  
 
@@ -93,15 +93,22 @@ Merci à Eloïse Coderay qui a créé toutes les versions du logo Y-CTF. Nous vo
 
 ## Comité 
 
-Notre comité est formé d'étudiants bénévoles et d'un assistant (depuis Septembre 2023).
+Notre comité est formé d'étudiants bénévoles et d'un assistant (depuis Septembre 2024).
+
+- Felix Breval, Président
+- Aubry Mongold, Vice-Président
+- Alexandre Shishmarov, Trésorier et responsable de la communication
+- Grégoire Rista, responsable des membres, infrastructure et matériel 
+
+### Ancien comité
+
+#### Comité 2023-2024
 
 -  Anthony David, Président
 -  Céline Roger, Vice-Présidente
 -  Anthony Coke, Responsable membres, infrastructure, matériel & communication
 -  Damien Maier, Trésorier
 -  Axel Vallon, Assistant Y-Security
-
-### Ancien comité
 
 #### Comité 2022-2023
 
