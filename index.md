@@ -33,6 +33,10 @@ En cas de question, n'hésitez pas à contacter le ou la responsable des membres
 
 {% include separator.html %}
 
+# Séance d'information 
+
+Une séance d'information sur le club et les futures activités aura lieu le jeudi 26 septembre à 12:15 dans la salle F01 à Cheseaux, rejoignez-nous !
+
 # Qu'est-ce qu'un CTF ? 
 {:#ctf}
 
