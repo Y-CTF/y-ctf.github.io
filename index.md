@@ -100,7 +100,7 @@ Merci à Eloïse Coderay qui a créé toutes les versions du logo Y-CTF. Nous vo
 Notre comité est formé d'étudiants bénévoles et d'un assistant (depuis Septembre 2024).
 
 - Felix Breval, Président
-- Aubry Mongold, Vice-Président
+- Aubry Mangold, Vice-Président
 - Alexandre Shyshmarov, Trésorier et responsable de la communication
 - Grégoire Rista, responsable des membres, infrastructure et matériel 
 
