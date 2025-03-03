@@ -2,14 +2,14 @@ base_url = "https://yctf.ch"
 minify_html = true
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
-taxonomies = [{ name = "tags" }]
-build_search_index = true
+taxonomies = [{ name = "categories", render = false }]
+# build_search_index = true
 
-[search]
-index_format = "fuse_javascript"
-include_description = true
-include_path = true
-include_content = false
+# [search]
+# index_format = "fuse_javascript"
+# include_description = true
+# include_path = true
+# include_content = false
 
 [markdown]
 render_emoji = true
@@ -18,13 +18,23 @@ bottom_footnotes = true
 highlight_theme = "css"
 highlight_code = true
 
-highlight_themes_css = [
-    { theme = "OneHalfDark", filename = "../styles/syntax-theme-dark.css" },
-    { theme = "bbedit", filename = "../styles/syntax-theme-light.css" },
-]
 
 [markdown.math]
 engine = "typst"
 svgo = "svgo.config.mjs"
 css = "styles/typst-embed.css"
 addon = "helpers.typ"
+
+[languages.fr]
+taxonomies = [{ name = "categories", render = false }]
+
+[languages.fr.translations]
+hero = "Nous sommes une association étudiante à but non lucratif née en 2020 à l'HEIG-VD, Suisse."
+latest_writeups = "Derniers writeups"
+
+[translations]
+hero = "We are a non-profit student association born in 2020 at HEIG-VD, Switzerland."
+latest_writeups = "Latest writeups"
+
+[extra]
+repository = "https://github.com/y-ctf/site"

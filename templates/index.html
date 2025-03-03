@@ -2,51 +2,46 @@
 
 {% block article %}
 
-<a href="/" class="underline-offset-4 decoration-4">
-    <h1>blog.cstef.dev</h1>
-</a>
+<img src="{{ get_url(path="images/banner_dark.png") | safe }}" alt="logo" class="h-32 md:h-48 p-2 md:p-4" />
+
 
 <p>
-    Sometimes, I like to share my thoughts, notes, ideas or projects on this blog. Maybe you'll find something useful
-    here!
+    {{ trans(key="hero", lang=lang) }}
 </p>
 
-<h2>Latest posts</h2>
+<h2>{{ trans(key="latest_writeups", lang=lang) }}</h2>
 
-{% set section = get_section(path="posts/_index.md") %}
-
+{% set writeups = get_section(path="writeups/_index.md") %}
 <ul>
-    {% for page in section.pages | slice(end=5) %}
-        <li>
-            <div>
-                <h3 class="flex items-center gap-2 md:gap-4">
-                    <a
-                        href="{{ page.permalink | safe }}"
-                        class="underline-offset-2 decoration-2 max-w-[70%] w-fit"
-                    >
-                        {{ page.title }}
+    {% for page in writeups.pages | slice(end=5) %}
+    <li>
+        <h3 class="flex items-center gap-2 md:gap-4 !mt-4 !text-xl">
+            <span class="font-normal">
+                {% set path = page.components | slice(end=2) | concat(with="_index.md") | join(sep="/") %}
+                {% set sub = get_section(path=path) %}
+                <a href="{{ sub.permalink | safe }}" class="no-underline text-muted-foreground">
+                    {{ sub.title }}:
+                </a>
+            </span>
+            <a href="{{ page.permalink | safe }}" class="underline-offset-2 decoration-2 max-w-[70%] w-fit">
+                {{ page.title }}
+            </a>
+            <div class="flex-grow"></div>
+            <div class="flex-col flex items-center justify-center gap-y-2 gap-x-4">
+                <span class="text-sm text-muted-foreground">
+                    {{ page.date | date(format="%Y-%m-%d") }}
+                </span>
+                <div class="flex flex-col gap-2 items-center">
+                    {% for tax in page.taxonomies.categories %}
+                    <a href="/{{ tax }}"
+                        class="bg-accent text-accent-foreground px-2 py-1 rounded-md text-sm w-fit font-bold no-underline">
+                        {{ tax }}
                     </a>
-                    <div class="flex-grow"></div>
-                    <div class="flex-col flex items-center justify-center gap-y-2 gap-x-4">
-                        <span class="text-sm text-muted-foreground">
-                            {{ page.date | date(format="%Y-%m-%d") }}
-                        </span>
-                        <div class="flex flex-col gap-2 items-center">
-                            {% for tax in page.taxonomies.tags %}
-                            <a
-                                href="/{{ tax }}"
-                                class="bg-accent text-accent-foreground px-2 py-1 rounded-md text-sm w-fit font-bold no-underline"
-                            >
-                                {{ tax }}
-                            </a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </h3>
-
-                <p>{{ page.description }}</p>
+                    {% endfor %}
+                </div>
             </div>
-        </li>
+        </h3>
+    </li>
     {% endfor %}
 </ul>
 
@@ -100,27 +95,15 @@
     </a>
 </div>
 
-<h2>Corrections</h2>
+<h2>// TODO</h2>
 
-<p>
-    I am far from perfect, and I am sure that there are mistakes in most of the content on this site. If you find any
-    errors, please let me know so that I can correct them. I appreciate your help in making this site better for
-    everyone.
-</p>
-<p>
-    You can reach me <em>via</em> mail at <a href="mailto:hi@cstef.dev">hi@cstef.dev</a>, or you can open an issue on
-    the
-    <a href="https://github.com/cestef/blog.cstef.dev">GitHub repository</a>.
-</p>
-
-<footer class="py-2 text-center">
+<footer class="pt-2 text-center">
     <p class="text-xs">
         No rights reserved. Do whatever you want -
         {{ now() | date(format="%Y") }}
-        <a href="https://cstef.dev" class="underline-offset-2 decoration-2"> cstef</a>
     </p>
     <p class="text-xs"><a href="https://getzola.org">Zola</a> v{{ version }} -
-        <a href="https://github.com/cestef/blog.cstef.dev" class="underline-offset-2 decoration-2">
+        <a href="{{ config.extra.repository }}" class="underline-offset-2 decoration-2">
             source
         </a>
     </p>

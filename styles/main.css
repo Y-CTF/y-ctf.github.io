@@ -2,8 +2,7 @@
 @import "./typst.css";
 @import "./theme.css";
 @import "./callouts.css";
-@import "./syntax-theme-dark.css" (prefers-color-scheme: dark);
-@import "./syntax-theme-light.css" (prefers-color-scheme: light);
+@import "./syntax.css";
 
 @plugin "@tailwindcss/typography";
 

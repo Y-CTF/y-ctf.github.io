@@ -2,18 +2,24 @@
 
 {% block article %}
 
-{% set section = get_section(path="posts/_index.md") %}
+{% set section = get_section(path="writeups/_index.md") %}
 
 <h1>Archive</h1>
 
 {% for year, posts in section.pages | group_by(attribute="year") %}
-    <h2>{{ year }}</h2>
+<h2>{{ year }}</h2>
 
-    <ul>
+<ul>
     {% for post in posts %}
-        <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+    <li> <span class="font-normal">
+            {% set path = post.components | slice(end=2) | concat(with="_index.md") | join(sep="/") %}
+            {% set sub = get_section(path=path) %}
+            <a href="{{ sub.permalink | safe }}" class="no-underline text-muted-foreground">
+                {{ sub.title }}:
+            </a>
+        </span><a href="{{ post.permalink }}">{{ post.title }}</a></li>
     {% endfor %}
-    </ul>
+</ul>
 {% endfor %}
 
 {% endblock article %}
