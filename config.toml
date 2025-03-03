@@ -1,0 +1,30 @@
+base_url = "https://yctf.ch"
+minify_html = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+taxonomies = [{ name = "tags" }]
+build_search_index = true
+
+[search]
+index_format = "fuse_javascript"
+include_description = true
+include_path = true
+include_content = false
+
+[markdown]
+render_emoji = true
+bottom_footnotes = true
+
+highlight_theme = "css"
+highlight_code = true
+
+highlight_themes_css = [
+    { theme = "OneHalfDark", filename = "../styles/syntax-theme-dark.css" },
+    { theme = "bbedit", filename = "../styles/syntax-theme-light.css" },
+]
+
+[markdown.math]
+engine = "typst"
+svgo = "svgo.config.mjs"
+css = "styles/typst-embed.css"
+addon = "helpers.typ"
