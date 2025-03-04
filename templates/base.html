@@ -18,29 +18,26 @@
         <div class="w-full h-0.5 bg-muted"></div>
         <div id="goto-results" class="w-full max-h-96 overflow-y-auto flex flex-col"></div>
     </div>
-    <div class="fixed top-0 left-0 w-full flex z-10">
-        <a href="/">
-             <picture>
-                <source srcset="{{ get_url(path='images/logo_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
-                <img src="{{ get_url(path='images/logo_light.png') | safe }}" alt="logo" class="h-18 md:h-26 p-2 md:p-4">
-            </picture>
-        </a>
-        <div class="flex-grow"></div>
-        <div class="text-secondary-foreground px-12 md:py-2 py-1 w-fit font-black self-center text-lg lg:text-xl">
-            {% for language_name, language in config.languages %}
-                {% if section %}
-                    {% set e = section.translations %}
-                {% elif page %}
-                    {% set e = page.translations %}
+    <a href="/" class="top-0 left-0">
+        <picture>
+            <source srcset="{{ get_url(path='images/logo_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ get_url(path='images/logo_light.png') | safe }}" alt="logo" class="h-18 md:h-26 p-2 md:p-4">
+        </picture>
+    </a>
+    <div class="text-secondary-foreground px-12 md:py-2 py-1 w-fit font-black self-center text-lg lg:text-xl top-0 left-0">
+        {% for language_name, language in config.languages %}
+            {% if section %}
+                {% set e = section.translations %}
+            {% elif page %}
+                {% set e = page.translations %}
+            {% endif %}
+            {%if e %}
+                {% set translation = e | filter(attribute="lang", value=language_name) | first %}
+                {% if translation %}
+                    <a href="{{ translation.permalink }}" class="no-underline">{{ language_name }}</a>
                 {% endif %}
-                {%if e %}
-                    {% set translation = e | filter(attribute="lang", value=language_name) | first %}
-                    {% if translation %}
-                        <a href="{{ translation.permalink }}" class="no-underline">{{ language_name }}</a>
-                    {% endif %}
-                {% endif %}
-                {% endfor %}
-        </div>
+            {% endif %}
+            {% endfor %}
     </div>
     <main id="scroll-element"><div class="mt-18 lg:mt-24 mx-4 mb-24 sm:mx-0">{% block content %} {% endblock %}</div></main>        
     <div class="bg-secondary text-primary-foreground w-fit fixed bottom-4 float-right right-8 transition-all duration-200 opacity-0"
