@@ -7,8 +7,6 @@ authors = ["carcajou"]
 categories = ["reverse"]
 +++
 
-## bread-making
-
 > My parents aren't home! Quick, help me make some bread please...
 
 Lien ctftime pour récupérer le fichier et voir d'autres writeup :
