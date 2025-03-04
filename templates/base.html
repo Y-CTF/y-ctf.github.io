@@ -30,14 +30,16 @@
             {% for language_name, language in config.languages %}
                 {% if section %}
                     {% set e = section.translations %}
-                {% else %}
+                {% elif page %}
                     {% set e = page.translations %}
                 {% endif %}
-                {% set translation = e | filter(attribute="lang", value=language_name) | first %}
-                {% if translation %}
-                    <a href="{{ translation.permalink }}" class="no-underline">{{ language_name }}</a>
+                {%if e %}
+                    {% set translation = e | filter(attribute="lang", value=language_name) | first %}
+                    {% if translation %}
+                        <a href="{{ translation.permalink }}" class="no-underline">{{ language_name }}</a>
+                    {% endif %}
                 {% endif %}
-            {% endfor %}
+                {% endfor %}
         </div>
     </div>
     <main id="scroll-element"><div class="mt-18 lg:mt-24 mx-4 mb-24 sm:mx-0">{% block content %} {% endblock %}</div></main>        

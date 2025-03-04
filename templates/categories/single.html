@@ -1,0 +1,23 @@
+{% extends "prose.html" %}
+
+{% block article %}
+
+<h1>Writeups for '{{ term.name }}'</h1>
+
+{% for year, posts in term.pages | group_by(attribute="year") %}
+<h2>{{ year }} <span class="text-muted-foreground font-normal">({{ posts | length }})</span></h2>
+
+<ul>
+    {% for post in posts %}
+    <li> <span class="font-normal">
+            {% set path = post.components | slice(end=2) | concat(with="_index.md") | join(sep="/") %}
+            {% set sub = get_section(path=path) %}
+            <a href="{{ sub.permalink | safe }}" class="no-underline text-muted-foreground">
+                {{ sub.title }}:
+            </a>
+        </span><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+{% endblock article %}

@@ -3,9 +3,13 @@
 {% block article %}
 
 <picture>
+    <source srcset="{{ get_url(path='images/old-logo-light.png') | safe }}" media="(prefers-color-scheme: dark)">
+    <img src="{{ get_url(path='images/old-logo-dark.png') | safe }}" alt="logo" class="h-48 md:h-64 p-2 md:p-4 w-full object-contain">
+</picture>
+{# <picture>
     <source srcset="{{ get_url(path='images/banner_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
     <img src="{{ get_url(path='images/banner_light.png') | safe }}" alt="logo" class="h-36 md:h-48 p-2 md:p-4 w-full object-contain">
-</picture>
+</picture> #}
 
 <p>
     {{ trans(key="hero", lang=lang) }}

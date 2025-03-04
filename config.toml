@@ -2,7 +2,7 @@ base_url = "https://cestef.github.io/yctf.ch/"
 minify_html = true
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
-taxonomies = [{ name = "categories", render = false }]
+taxonomies = [{ name = "categories", render = true }]
 build_search_index = true
 
 [search]
@@ -26,7 +26,7 @@ css = "styles/typst-embed.css"
 addon = "helpers.typ"
 
 [languages.fr]
-taxonomies = [{ name = "categories", render = false }]
+taxonomies = [{ name = "categories", render = true }]
 
 [languages.fr.translations]
 hero = "Nous sommes une association étudiante à but non lucratif née en 2020 à l'HEIG-VD, Suisse."
