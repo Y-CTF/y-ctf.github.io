@@ -2,8 +2,10 @@
 
 {% block article %}
 
-<img src="{{ get_url(path="images/banner_dark.png") | safe }}" alt="logo" class="h-32 md:h-48 p-2 md:p-4" />
-
+<picture>
+    <source srcset="{{ get_url(path='images/banner_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
+    <img src="{{ get_url(path='images/banner_light.png') | safe }}" alt="logo" class="h-36 md:h-48 p-2 md:p-4">
+</picture>
 
 <p>
     {{ trans(key="hero", lang=lang) }}

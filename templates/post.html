@@ -18,7 +18,28 @@
         </a>
         {% endfor %}
     </span>
+    <div class="flex-grow"></div>
+    {% if page.assets | length %}
+    <button onclick="toggleAssets()" class="cursor-pointer">
+        <svg stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-none stroke-accent">
+            <path
+                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
+            </path>
+        </svg>
+    </button>
+    {% endif %}
 </div>
+{% if page.assets | length %}
+<div id="assets-container" class="hidden gap-2 px-2 py-1 border border-muted my-4">
+    <div class="flex flex-row gap-4 w-full">
+        {% for asset in page.assets %}
+        <a href="{{ asset }}">{{ asset | split(pat="/") | last }}</a>
+        {% endfor %}
+    </div>  
+</div>
+{% endif %}
+
 {{ page.content | safe }}
 
 {% endblock article %}

@@ -3,13 +3,13 @@ minify_html = true
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
 taxonomies = [{ name = "categories", render = false }]
-# build_search_index = true
+build_search_index = true
 
-# [search]
-# index_format = "fuse_javascript"
-# include_description = true
-# include_path = true
-# include_content = false
+[search]
+index_format = "fuse_javascript"
+include_description = true
+include_path = true
+include_content = false
 
 [markdown]
 render_emoji = true

@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="{{ get_url(path="css/main.css") | safe }}" />
   <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.basic.min.js" crossorigin="anonymous"></script>
-  {# <script src="{{ get_url(path="js/main.js") | safe }}" defer></script> #}
-  {# <script src="{{ get_url(path="search_index.en.js") | safe }}" defer></script> #}
+  <script src="{{ get_url(path="js/main.js") | safe }}" defer></script>
+  <script src="{{ get_url(path="search_index.en.js") | safe }}" defer></script>
 </head>
 
 <body class="min-h-[100svh]">
@@ -20,15 +20,23 @@
     </div>
     <div class="fixed top-0 left-0 w-full flex z-10">
         <a href="/">
-            <img src="{{ get_url(path="images/logo_dark.png") | safe }}" alt="logo" class="h-18 w-18 md:h-26 md:w-26 p-2 md:p-4" />
+             <picture>
+                <source srcset="{{ get_url(path='images/logo_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
+                <img src="{{ get_url(path='images/logo_light.png') | safe }}" alt="logo" class="h-18 md:h-26 p-2 md:p-4">
+            </picture>
         </a>
-        {# <div class="text-secondary-foreground px-4 md:py-2 py-1 w-fit font-black self-center">
-            {{ current_path | trim_end_matches(pat="/") }}
-        </div> #}
         <div class="flex-grow"></div>
         <div class="text-secondary-foreground px-12 md:py-2 py-1 w-fit font-black self-center text-lg lg:text-xl">
             {% for language_name, language in config.languages %}
-            <a href="{{ get_url(path="@/_index.md", lang=language_name) }}" class="no-underline">{{ language_name }}</a>
+                {% if section %}
+                    {% set e = section.translations %}
+                {% else %}
+                    {% set e = page.translations %}
+                {% endif %}
+                {% set translation = e | filter(attribute="lang", value=language_name) | first %}
+                {% if translation %}
+                    <a href="{{ translation.permalink }}" class="no-underline">{{ language_name }}</a>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
