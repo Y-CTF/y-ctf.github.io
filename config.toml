@@ -31,10 +31,16 @@ taxonomies = [{ name = "categories", render = false }]
 [languages.fr.translations]
 hero = "Nous sommes une association étudiante à but non lucratif née en 2020 à l'HEIG-VD, Suisse."
 latest_writeups = "Derniers writeups"
+rss_feed = "S'abonner au flux RSS"
+archive = "Voir tous les posts"
+footer = "Pas de droits réservés. Faites ce que vous voulez"
 
 [translations]
 hero = "We are a non-profit student association born in 2020 at HEIG-VD, Switzerland."
 latest_writeups = "Latest writeups"
+rss_feed = "Subscribe to RSS feed"
+archive = "View all posts"
+footer = "No rights reserved. Do whatever you want"
 
 [extra]
 repository = "https://github.com/y-ctf/site"

@@ -58,7 +58,7 @@
                     class="text-muted-foreground group-hover:text-primary-foreground transition-colors duration-200 p-0 !m-0 text-sm sm:text-base"
                     style="margin: 0 !important;"
                 >
-                    Subscribe to the feed
+                    {{ trans(key="rss_feed", lang=lang) }}
                 </p>
                 <svg class="duration-200 transition-colors group-hover:text-primary-foreground h-[1.2rem] w-[1.2rem] text-[--tw-prose-links]"
                     data-icon="octicon:rss-16" height="1em" width="1em">
@@ -81,7 +81,7 @@
                     class="text-muted-foreground group-hover:text-primary-foreground transition-colors duration-200 p-0 !m-0 text-sm sm:text-base"
                     style="margin: 0 !important;"
                 >
-                    View all posts
+                    {{ trans(key="archive", lang=lang) }}
                 </p>
                 <svg class="duration-200 transition-colors group-hover:text-primary-foreground h-[1.2rem] w-[1.2rem] text-[--link]"
                     data-icon="octicon:arrow-right-16" height="1em" width="1em">
@@ -101,7 +101,7 @@
 
 <footer class="pt-2 text-center">
     <p class="text-xs">
-        No rights reserved. Do whatever you want -
+        {{ trans(key="footer", lang=lang) }} -
         {{ now() | date(format="%Y") }}
     </p>
     <p class="text-xs"><a href="https://getzola.org">Zola</a> v{{ version }} -
