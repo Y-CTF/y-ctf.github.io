@@ -1,4 +1,3 @@
 +++
 render = false
-title = "french"
 +++

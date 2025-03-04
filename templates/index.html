@@ -51,7 +51,7 @@
 
 
 <div class="flex gap-4 sm:gap-6 items-center justify-center mt-8 md:mt-12">
-    <a href="/atom.xml" class="no-underline">
+    <a href="{{ get_url(path="/atom.xml") }}" class="no-underline">
         <div
             class="bg-accent px-3 py-1 md:py-2 h-fit hover:bg-primary/90 transition-colors duration-200 group"
         >
@@ -74,7 +74,7 @@
             </div>
         </div>
     </a>
-    <a href="/archive" class="no-underline">
+    <a href="{{ get_url(path="@/pages/archive.md") }}" class="no-underline">
         <div
             class="bg-accent px-3 py-1 md:py-2 h-fit hover:bg-primary/90 transition-colors duration-200 group"
         >

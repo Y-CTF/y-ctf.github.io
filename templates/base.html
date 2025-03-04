@@ -18,7 +18,7 @@
         <div class="w-full h-0.5 bg-muted"></div>
         <div id="goto-results" class="w-full max-h-96 overflow-y-auto flex flex-col"></div>
     </div>
-    <a href="/" class="top-0 left-0 fixed">
+    <a href="{{ get_url(path="/") }}" class="top-0 left-0 fixed">
         <picture>
             <source srcset="{{ get_url(path='images/logo_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
             <img src="{{ get_url(path='images/logo_light.png') | safe }}" alt="logo" class="h-18 md:h-26 p-2 md:p-4">
