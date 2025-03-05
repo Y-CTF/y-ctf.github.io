@@ -23,7 +23,7 @@ We are given an executable that is presumably a malware. Running it under a VM a
 
 There were now two ways of solving this: reverse-engineering the encryption happening in the binary by decompiling it blah blah blah, or spoofing `super-ultrasus.huntressctf.local` by overriding `/etc/hosts` and trying to intercept what was sent. I went the latter because I was lazy and it seemed clearly simpler if we had a bit of the luck and the encryption wasn't too hard.
 
-We first our first good old `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA` payload, put it in `challenge-files`, write a quick and dirty web-server to intercept:
+We first generate our good old `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA` payload, put it in `challenge-files` and write a quick and dirty web-server to intercept:
 
 ```python
 from flask import Flask, request
