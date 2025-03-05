@@ -1,7 +1,7 @@
 +++
 title = "Finder's Fee"
 description = "You gotta make sure the people who find stuff for you are rewarded well!\n\nEscalate your privileges and uncover the flag.txt in the finder user's home directory.\n\nPress the Start button in the top-right to begin this challenge.\nConnect with:\n\n# Password is \"userpass\"\nssh -p 30668 user@challenge.ctf.games"
-authors = ["mango", "Tyr"]
+authors = ["mango", "Tyr", "cstef"]
 date = 2024-09-30
 
 [taxonomies]

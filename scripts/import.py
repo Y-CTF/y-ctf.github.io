@@ -1,3 +1,13 @@
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#     "python-slugify",
+#     "requests",
+#     "rich",
+#     "tomlkit",
+# ]
+# ///
+
 import requests
 from rich import print
 import argparse
@@ -6,7 +16,7 @@ import tomlkit
 import re
 from slugify import slugify
 
-BASE_URL = "https://note.yctf.ch"
+BASE_URL = "http://note.yctf.ch"
 
 
 GET_CTF_QUERY = """
@@ -182,7 +192,7 @@ def download_note(pad_url):
 
 def execute_query(op, query, variables, token):
     url = f"{BASE_URL}/graphql"
-    headers = {"Authorization": token}
+    headers = {"Authorization": f"Bearer {token}"}
     data = [
         {
             "operationName": op,
@@ -260,6 +270,10 @@ def main():
             for author in team
             if author["id"] in [w["profileId"] for w in task["workOnTasks"]["nodes"]]
         ]
+
+        if not authors:
+            authors = ["Unknown"]
+            print(f"Authors not found for {task['title']}")
 
         frontmatter = {
             "title": task["title"],

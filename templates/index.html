@@ -15,6 +15,16 @@
     {{ trans(key="hero", lang=lang) }}
 </p>
 
+<p class="text-center">
+    <a class="font-bold" href="{{ get_url(path="@/pages/about.md", lang=lang) }}">{{ trans(key="about", lang=lang) }}</a>
+    ·
+    <a class="font-bold" href="{{ get_url(path="@/pages/inscription.md", lang=lang) }}">{{ trans(key="inscription", lang=lang) }}</a>
+    ·
+    <a class="font-bold" href="{{ get_url(path="@/pages/contact.md", lang=lang) }}">{{ trans(key="contact", lang=lang) }}</a>
+    ·
+    <a class="font-bold" href="{{ get_url(path="@/pages/commitee.md", lang=lang) }}">{{ trans(key="commitee", lang=lang) }}</a>
+</p>
+
 <h2>{{ trans(key="latest_writeups", lang=lang) }}</h2>
 
 {% set writeups = get_section(path="writeups/_index.md") %}
@@ -99,9 +109,9 @@
     </a>
 </div>
 
-<h2>// TODO</h2>
 
-<footer class="pt-2 text-center">
+
+<footer class="pt-8 text-center">
     <p class="text-xs">
         {{ trans(key="footer", lang=lang) }} -
         {{ now() | date(format="%Y") }}

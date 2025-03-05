@@ -7,8 +7,6 @@ authors = ["leonard-besseau"]
 categories = ["crypto"]
 +++
 
-# Crypto CTF 2021 Writeup Challenge Farm
-
 **Not solved during the CTF** :(
 
 For this task we are given the source code and an encryption oracle.
