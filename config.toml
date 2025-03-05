@@ -4,7 +4,6 @@ generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
 taxonomies = [{ name = "categories", render = true }]
 build_search_index = true
-
 [search]
 index_format = "fuse_javascript"
 include_description = true

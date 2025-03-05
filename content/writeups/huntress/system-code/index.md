@@ -33,7 +33,7 @@ What we tried:
 
 ## Matrix library diffing with original source
 
-```diff=
+```diff
 diff -bur ../../matrix-code-github/js/config.js ./config.js
 --- ../../matrix-code-github/js/config.js	2024-10-08 14:28:11.071705089 +0200
 +++ ./config.js	2024-10-08 19:00:47.525132778 +0200
