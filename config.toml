@@ -33,6 +33,10 @@ latest_writeups = "Derniers writeups"
 rss_feed = "S'abonner au flux RSS"
 archive = "Voir tous les posts"
 footer = "Pas de droits réservés. Faites ce que vous voulez"
+about = "À propos"
+commitee = "Comité"
+inscription = "Rejoins-nous"
+contact = "Contact"
 
 [translations]
 hero = "We are a non-profit student association born in 2020 at HEIG-VD, Switzerland."
@@ -40,6 +44,10 @@ latest_writeups = "Latest writeups"
 rss_feed = "Subscribe to RSS feed"
 archive = "View all posts"
 footer = "No rights reserved. Do whatever you want"
+about = "About"
+commitee = "Commitee"
+inscription = "Join us"
+contact = "Contact"
 
 [extra]
 repository = "https://github.com/y-ctf/site"
