@@ -1,7 +1,7 @@
 +++
 title = "The Void"
 description = "When you gaze long into the void, the void gazes also into you..."
-authors = []
+authors = ["ary.eth" ,"mango"]
 date = 2024-09-30
 
 [taxonomies]

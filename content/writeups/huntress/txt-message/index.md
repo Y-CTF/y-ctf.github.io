@@ -1,7 +1,7 @@
 +++
 title = "TXT Message"
 description = "Hmmm, have you seen some of the strange DNS records for the ctf.games domain? One of them sure is odd... "
-authors = []
+authors = ["Unknown"]
 date = 2024-09-30
 
 [taxonomies]

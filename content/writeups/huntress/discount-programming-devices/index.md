@@ -1,7 +1,7 @@
 +++
 title = "Discount Programming Devices"
 description = "I used a tool on the internet to obfuscate my script!\nBut I lost it, and I don't know how to get it back.\nMaybe you can help?"
-authors = []
+authors = ["glys"]
 date = 2024-09-30
 
 [taxonomies]
