@@ -1,5 +1,4 @@
 :root {
-	/* Monochromatic palette inspired by the YCTF logo */
 	--color-orange-rgb: 100, 100, 100;
 	--color-red: #282828;
 	--color-orange-rgb: 100, 100, 100;
@@ -40,16 +39,16 @@
 	--accent-foreground: 0 0% 15%;
 	--accent-hover: 0 0% 85%;
 
-	--destructive: 0 0% 40%;
+	--destructive: 0 84% 60%;
 	--destructive-foreground: 0 0% 100%;
-	--destructive-hover: 0 0% 35%;
-	--success: 0 0% 40%;
+	--destructive-hover: 0 84% 55%;
+	--success: 142 76% 36%;
 	--success-foreground: 0 0% 100%;
-	--success-hover: 0 0% 35%;
-	--warning: 0 0% 80%;
+	--success-hover: 142 76% 31%;
+	--warning: 38 92% 50%;
 	--warning-foreground: 0 0% 15%;
-	--info: 0 0% 60%;
-	--info-foreground: 0 0% 15%;
+	--info: 221 83% 53%;
+	--info-foreground: 0 0% 100%;
 
 	--border: 0 0% 85%;
 	--border-hover: 0 0% 75%;
@@ -123,16 +122,16 @@
 		--accent-foreground: 0 0% 90%;
 		--accent-hover: 0 0% 25%;
 
-		--destructive: 0 0% 60%;
-		--destructive-foreground: 0 0% 10%;
-		--destructive-hover: 0 0% 65%;
-		--success: 0 0% 60%;
-		--success-foreground: 0 0% 10%;
-		--success-hover: 0 0% 65%;
-		--warning: 0 0% 70%;
-		--warning-foreground: 0 0% 10%;
-		--info: 0 0% 50%;
-		--info-foreground: 0 0% 10%;
+		--destructive: 0 62% 50%;
+		--destructive-foreground: 0 0% 100%;
+		--destructive-hover: 0 62% 45%;
+		--success: 142 69% 58%;
+		--success-foreground: 142 100% 10%;
+		--success-hover: 142 69% 53%;
+		--warning: 38 92% 60%;
+		--warning-foreground: 38 100% 10%;
+		--info: 221 83% 65%;
+		--info-foreground: 221 100% 10%;
 
 		--border: 0 0% 20%;
 		--border-hover: 0 0% 25%;

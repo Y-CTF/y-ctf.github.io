@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="static/images/old-logo-dark.png#gh-light-mode-only" alt="Logo" height="200">
-    <img src="static/images/old-logo-light.png#gh-dark-mode-only" alt="Logo" height="200">
+    <img src="static/images/banner_light.png#gh-light-mode-only" alt="Logo" height="200">
+    <img src="static/images/banner_dark.png#gh-dark-mode-only" alt="Logo" height="200">
 </p>
 
 --- 

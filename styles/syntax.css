@@ -2,13 +2,18 @@
 	/* Base colors - default to light theme */
 	--code-bg: #f8f8f8;
 	--code-text: #181818;
-	--code-comment: #8a8a8a;
+	--code-comment: #6b7280;
+	--code-string: hsl(142 30% 35%);
+	--code-number: hsl(221 40% 45%);
+	--code-keyword: hsl(0 40% 45%);
+	--code-function: hsl(221 35% 40%);
+	--code-type: hsl(38 35% 40%);
 	--code-subtle: #606060;
 	--code-accent: #303030;
 	--code-border: #e0e0e0;
 	--code-selection: #e5e5e5;
 	--code-highlight: #d0d0d0;
-	--code-error-bg: #404040;
+	--code-error-bg: hsl(0 84% 60%);
 	--code-error-text: #ffffff;
 	--code-deprecated-bg: #686868;
 }
@@ -18,13 +23,18 @@
 		/* Override with dark theme colors */
 		--code-bg: hsl(0 0% 13%);
 		--code-text: #bfbab0;
-		--code-comment: #5c6773;
+		--code-comment: #6b7280;
+		--code-string: hsl(142 35% 65%);
+		--code-number: hsl(221 45% 70%);
+		--code-keyword: hsl(0 45% 70%);
+		--code-function: hsl(221 40% 65%);
+		--code-type: hsl(38 40% 65%);
 		--code-subtle: #8a8a8a;
 		--code-accent: #d0d0d0;
 		--code-border: #2a2a2a;
 		--code-selection: #252525;
 		--code-highlight: #303030;
-		--code-error-bg: #484848;
+		--code-error-bg: hsl(0 62% 50%);
 		--code-error-text: #ffffff;
 		--code-deprecated-bg: #686868;
 	}
@@ -48,11 +58,11 @@
 
 .z-string,
 .z-constant.z-other.z-symbol {
-	color: var(--code-text);
+	color: var(--code-string);
 }
 
 .z-constant.z-numeric {
-	color: var(--code-accent);
+	color: var(--code-number);
 	font-weight: bold;
 }
 
@@ -62,13 +72,13 @@
 }
 
 .z-constant.z-language {
-	color: var(--code-accent);
+	color: var(--code-keyword);
 	font-weight: bold;
 }
 
 .z-constant.z-character,
 .z-constant.z-other {
-	color: var(--code-accent);
+	color: var(--code-string);
 }
 
 .z-variable.z-member {
@@ -77,7 +87,7 @@
 
 .z-keyword,
 .z-keyword.z-operator.z-word {
-	color: var(--code-accent);
+	color: var(--code-keyword);
 	font-weight: bold;
 }
 
@@ -99,34 +109,34 @@
 }
 
 .z-storage {
-	color: var(--code-accent);
+	color: var(--code-type);
 	font-weight: bold;
 }
 
 .z-storage.z-type {
-	color: var(--code-accent);
+	color: var(--code-type);
 	font-weight: bold;
 }
 
 .z-entity.z-name.z-function {
-	color: var(--code-accent);
+	color: var(--code-function);
 	font-weight: bold;
 }
 
 .z-shell.z-function {
 	font-weight: bold;
-	color: var(--code-accent);
+	color: var(--code-function);
 }
 
 .z-entity.z-name,
 .z-entity.z-name.z-tag,
 .z-entity.z-name.z-label {
-	color: var(--code-accent);
+	color: var(--code-function);
 	font-weight: bold;
 }
 
 .z-entity.z-other.z-inherited-class {
-	color: var(--code-accent);
+	color: var(--code-type);
 	text-decoration: underline;
 }
 
@@ -135,14 +145,14 @@
 }
 
 .z-variable.z-language {
-	color: var(--code-accent);
+	color: var(--code-keyword);
 	font-style: italic;
 	font-weight: bold;
 }
 
 .z-entity.z-name.z-tag,
 .z-meta.z-tag.z-sgml {
-	color: var(--code-accent);
+	color: var(--code-function);
 }
 
 .z-punctuation.z-definition.z-tag.z-end,
@@ -152,13 +162,13 @@
 }
 
 .z-entity.z-other.z-attribute-name {
-	color: var(--code-accent);
+	color: var(--code-type);
 	font-style: italic;
 }
 
 .z-support.z-function,
 .z-support.z-macro {
-	color: var(--code-accent);
+	color: var(--code-function);
 }
 
 .z-support.z-constant {
@@ -168,7 +178,7 @@
 
 .z-support.z-type,
 .z-support.z-class {
-	color: var(--code-accent);
+	color: var(--code-type);
 	font-style: italic;
 }
 
@@ -183,13 +193,13 @@
 }
 
 .z-markup.z-heading {
-	color: var(--code-accent);
+	color: var(--code-function);
 	font-weight: bold;
 }
 
 .z-string.z-other.z-link,
 .z-markup.z-underline.z-link {
-	color: var(--code-subtle);
+	color: var(--code-function);
 	text-decoration: underline;
 }
 
@@ -231,16 +241,16 @@
 }
 
 .z-markup.z-inserted {
-	color: var(--code-accent);
+	color: var(--code-string);
 	background-color: var(--code-highlight);
 }
 
 .z-markup.z-changed {
-	color: var(--code-accent);
+	color: var(--code-type);
 }
 
 .z-markup.z-deleted {
-	color: var(--code-accent);
+	color: var(--code-keyword);
 	text-decoration: line-through;
 }
 
@@ -249,5 +259,5 @@
 }
 
 .z-markup.z-table {
-	color: var(--code-accent);
+	color: var(--code-function);
 }

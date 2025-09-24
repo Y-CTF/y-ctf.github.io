@@ -1,18 +1,19 @@
 :root {
-	--t: #3c3836;
-	--d: #efefeb;
-	--m: #dfddd8;
-	--b: #458588;
-	--r: #cc241d;
-	--g: #98971a;
-	--p: #b16286;
-	--y: #fabd2f;
+	--t: #000000;
+	--b: #ffffff;
+	--m: #d5d5d5;
+	--l: #0074d9;
+	--r: #ff4136;
+	--g: #2ecc40;
+	--p: #f012be;
+	--y: #ffdc00;
 }
+
 @media (prefers-color-scheme: dark) {
 	:root {
-		--t: #ebdbb2;
-		--d: #292724;
-		--m: #3b3935;
+		--t: #ffffff;
+		--b: #000000;
+		--m: #7a7a7a;
 	}
 }
 .typst-text[fill="\#000000"],

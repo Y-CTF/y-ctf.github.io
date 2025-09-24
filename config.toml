@@ -16,13 +16,14 @@ bottom_footnotes = true
 
 highlight_theme = "css"
 highlight_code = true
+cache = true
 
 
 [markdown.math]
 engine = "typst"
 svgo = "svgo.config.mjs"
 css = "styles/typst-embed.css"
-addon = "helpers.typ"
+addon = "style.typ"
 
 [languages.fr]
 taxonomies = [{ name = "categories", render = true }]
@@ -34,9 +35,19 @@ rss_feed = "S'abonner au flux RSS"
 archive = "Voir tous les posts"
 footer = "Pas de droits réservés. Faites ce que vous voulez"
 about = "À propos"
+events = "Événements"
 commitee = "Comité"
 inscription = "Rejoins-nous"
 contact = "Contact"
+upcoming_events = "Événements à venir"
+past_events = "Événements passés"
+add_to_calendar = "Ajouter au calendrier"
+download_ics = "Télécharger ICS"
+learn_more = "En savoir plus"
+registration_deadline = "Date limite d'inscription"
+recurring = "Récurrent"
+no_upcoming_events = "Aucun événement à venir"
+no_events = "Aucun événement"
 
 [translations]
 hero = "We are a non-profit student association born in 2020 at HEIG-VD, Switzerland."
@@ -45,9 +56,19 @@ rss_feed = "Subscribe to RSS feed"
 archive = "View all posts"
 footer = "No rights reserved. Do whatever you want"
 about = "About"
+events = "Events"
 commitee = "Commitee"
 inscription = "Join us"
 contact = "Contact"
+upcoming_events = "Upcoming Events"
+past_events = "Past Events"
+add_to_calendar = "Add to Calendar"
+download_ics = "Download ICS"
+learn_more = "Learn More"
+registration_deadline = "Registration Deadline"
+recurring = "Recurring"
+no_upcoming_events = "No upcoming events"
+no_events = "No events"
 
 [extra]
 repository = "https://github.com/y-ctf/site"
