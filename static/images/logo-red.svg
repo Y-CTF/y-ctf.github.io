@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    id="screenshot-7d103f36-f396-80db-8006-db36b9f17880" viewBox="0 0 300 300"
+    xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
+>
+    <g id="shape-7d103f36-f396-80db-8006-db36b9f17880" rx="0" ry="0">
+        <g id="shape-7d103f36-f396-80db-8006-db36b9f17882" rx="0" ry="0">
+            <g id="shape-7d103f36-f396-80db-8006-db36b9f17883">
+                <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+                    class="text-container" x="26" y="24" width="124" height="126" rx="0" ry="0">
+                    <defs>
+                        <pattern patternUnits="objectBoundingBox" width="77.40625" height="170"
+                            id="fill-0-render-4-0">
+                            <g>
+                                <rect width="77.40625" height="170"
+                                    style="fill: rgb(230, 62, 61); fill-opacity: 1;" />
+                            </g>
+                        </pattern>
+                    </defs>
+                    <g class="fills" id="fills-7d103f36-f396-80db-8006-db36b9f17883">
+                        <text x="49.296875" y="171.6015625" dominant-baseline="ideographic"
+                            textLength="77.40625" lengthAdjust="spacingAndGlyphs"
+                            style="text-transform: none; font-family: &quot;JetBrains Mono&quot;; letter-spacing: normal; font-style: normal; font-weight: 800; white-space: pre; font-size: 129px; text-decoration: none solid rgb(230, 62, 61); direction: ltr; fill: rgb(230, 62, 61); fill-opacity: 1;">
+                            Y</text>
+                    </g>
+                </g>
+            </g>
+            <g id="shape-7d103f36-f396-80db-8006-db36b9f17884">
+                <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+                    class="text-container" x="150" y="24" width="124" height="126" rx="0" ry="0">
+                    <defs>
+                        <pattern patternUnits="objectBoundingBox" width="77.40625" height="170"
+                            id="fill-0-render-5-0">
+                            <g>
+                                <rect width="77.40625" height="170"
+                                    style="fill: rgb(230, 62, 61); fill-opacity: 1;" />
+                            </g>
+                        </pattern>
+                    </defs>
+                    <g class="fills" id="fills-7d103f36-f396-80db-8006-db36b9f17884">
+                        <text x="173.296875" y="171.6015625" dominant-baseline="ideographic"
+                            textLength="77.40625" lengthAdjust="spacingAndGlyphs"
+                            style="text-transform: none; font-family: &quot;JetBrains Mono&quot;; letter-spacing: normal; font-style: normal; font-weight: 800; white-space: pre; font-size: 129px; text-decoration: none solid rgb(230, 62, 61); direction: ltr; fill: rgb(230, 62, 61); fill-opacity: 1;">
+                            C</text>
+                    </g>
+                </g>
+            </g>
+            <g id="shape-7d103f36-f396-80db-8006-db36b9f17885">
+                <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+                    class="text-container" x="26" y="150" width="124" height="126" rx="0" ry="0">
+                    <defs>
+                        <pattern patternUnits="objectBoundingBox" width="77.40625" height="170"
+                            id="fill-0-render-6-0">
+                            <g>
+                                <rect width="77.40625" height="170"
+                                    style="fill: rgb(230, 62, 61); fill-opacity: 1;" />
+                            </g>
+                        </pattern>
+                    </defs>
+                    <g class="fills" id="fills-7d103f36-f396-80db-8006-db36b9f17885">
+                        <text x="49.296875" y="297.6015625" dominant-baseline="ideographic"
+                            textLength="77.40625" lengthAdjust="spacingAndGlyphs"
+                            style="text-transform: none; font-family: &quot;JetBrains Mono&quot;; letter-spacing: normal; font-style: normal; font-weight: 800; white-space: pre; font-size: 129px; text-decoration: none solid rgb(230, 62, 61); direction: ltr; fill: rgb(230, 62, 61); fill-opacity: 1;">
+                            T</text>
+                    </g>
+                </g>
+            </g>
+            <g id="shape-7d103f36-f396-80db-8006-db36b9f17886">
+                <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+                    class="text-container" x="150" y="150" width="124" height="126" rx="0" ry="0">
+                    <defs>
+                        <pattern patternUnits="objectBoundingBox" width="77.40625" height="170"
+                            id="fill-0-render-7-0">
+                            <g>
+                                <rect width="77.40625" height="170"
+                                    style="fill: rgb(230, 62, 61); fill-opacity: 1;" />
+                            </g>
+                        </pattern>
+                    </defs>
+                    <g class="fills" id="fills-7d103f36-f396-80db-8006-db36b9f17886">
+                        <text x="173.296875" y="297.6015625" dominant-baseline="ideographic"
+                            textLength="77.40625" lengthAdjust="spacingAndGlyphs"
+                            style="text-transform: none; font-family: &quot;JetBrains Mono&quot;; letter-spacing: normal; font-style: normal; font-weight: 800; white-space: pre; font-size: 129px; text-decoration: none solid rgb(230, 62, 61); direction: ltr; fill: rgb(230, 62, 61); fill-opacity: 1;">
+                            F</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

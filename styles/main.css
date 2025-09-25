@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 @import "tailwindcss";
 @import "./typst.css";
 @import "./theme.css";
@@ -140,4 +142,20 @@ input {
 
 .goto-no-result {
 	@apply text-destructive;
+}
+
+.invert-colors {
+	transition: filter 0.3s ease-in-out;
+	filter: brightness(0);
+}
+
+@media (prefers-color-scheme: dark) {
+	.invert-colors {
+		transition: filter 0.3s ease-in-out;
+		filter: brightness(0) invert(1);
+	}
+}
+
+.invert-colors:hover {
+	filter: none;
 }

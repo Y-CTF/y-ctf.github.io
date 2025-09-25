@@ -21,10 +21,15 @@
         <div id="goto-results" class="w-full max-h-96 overflow-y-auto flex flex-col"></div>
     </div>
     <a href="{{ get_url(path="/") }}" class="top-0 left-0 fixed">
-        <picture>
+        {# <picture>
             <source srcset="{{ get_url(path='images/logo_dark_bold.png') | safe }}" media="(prefers-color-scheme: dark)">
             <img src="{{ get_url(path='images/logo_light_bold.png') | safe }}" alt="logo" class="h-18 md:h-26 lg:h-32 p-2 md:p-4">
-        </picture>
+        </picture> #}
+        <div class="h-18 md:h-26 lg:h-32 p-2 md:p-4">
+            <div class="w-full h-full flex items-center justify-center">
+                <div class="w-full h-full [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain invert-colors select-none">{{ load_data(path="static/images/logo-red.svg") | safe }}</div>
+            </div>
+        </div>
     </a>
     <div class="text-secondary-foreground mx-6 md:py-2 py-1 font-black text-lg lg:text-xl top-0 right-0 fixed w-18 md:w-26 h-18 md:h-26 lg:h-32 p-2 md:p-4 text-center flex items-center justify-center">
         {% for language_name, language in config.languages %}

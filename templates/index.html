@@ -2,29 +2,27 @@
 
 {% block article %}
 
-<picture>
-    <source srcset="{{ get_url(path='images/banner_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
-    <img src="{{ get_url(path='images/banner_light.png') | safe }}" alt="logo" class="h-48 md:h-64 p-2 md:p-4 w-full object-contain">
-</picture>
 {# <picture>
-    <source srcset="{{ get_url(path='images/banner_dark.png') | safe }}" media="(prefers-color-scheme: dark)">
-    <img src="{{ get_url(path='images/banner_light.png') | safe }}" alt="logo" class="h-36 md:h-48 p-2 md:p-4 w-full object-contain">
+    <source srcset="{{ get_url(path='images/banner-white.svg') | safe }}" media="(prefers-color-scheme: dark)">
+    <img src="{{ get_url(path='images/banner-gray.svg') | safe }}" alt="logo" class="h-48 md:h-64 p-2 md:p-4 w-full object-contain">
 </picture> #}
+
+<div class="h-48 md:h-64 p-2 md:p-4 w-full flex items-center justify-center invert-colors select-none">{{ load_data(path="static/images/banner-red.svg") | safe }}</div>
 
 <p>
     {{ trans(key="hero", lang=lang) }}
 </p>
 
 <p class="text-center">
-    <a class="font-bold" href="{{ get_url(path="@/pages/about.md", lang=lang) }}">{{ trans(key="about", lang=lang) }}</a>
+    <a class="font-bold" href='{{ get_url(path="@/pages/about.md", lang=lang) }}'>{{ trans(key="about", lang=lang) }}</a>
     ·
-    <a class="font-bold" href="{{ get_url(path="@/pages/events.md", lang=lang) }}">{{ trans(key="events", lang=lang) }}</a>
+    <a class="font-bold" href='{{ get_url(path="@/pages/events.md", lang=lang) }}'>{{ trans(key="events", lang=lang) }}</a>
     ·
-    <a class="font-bold" href="{{ get_url(path="@/pages/inscription.md", lang=lang) }}">{{ trans(key="inscription", lang=lang) }}</a>
+    <a class="font-bold" href='{{ get_url(path="@/pages/inscription.md", lang=lang) }}'>{{ trans(key="inscription", lang=lang) }}</a>
     ·
-    <a class="font-bold" href="mailto:y-ctf@heig-vd.ch">{{ trans(key="contact", lang=lang) }}</a>
+    <a class="font-bold" href='mailto:y-ctf@heig-vd.ch'>{{ trans(key="contact", lang=lang) }}</a>
     ·
-    <a class="font-bold" href="{{ get_url(path="@/pages/commitee.md", lang=lang) }}">{{ trans(key="commitee", lang=lang) }}</a>
+    <a class="font-bold" href='{{ get_url(path="@/pages/commitee.md", lang=lang) }}'>{{ trans(key="commitee", lang=lang) }}</a>
 </p>
 
 <h2>{{ trans(key="latest_writeups", lang=lang) }}</h2>
