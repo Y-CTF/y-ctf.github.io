@@ -1,0 +1,464 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title> System Code</title><meta content="width=device-width,initial-scale=1.0" name=viewport><link href=https://cestef.github.io/yctf.ch/css/main.css rel=stylesheet><link href=https://cestef.github.io/yctf.ch/rss.xml rel=alternate title=RSS type=application/rss+xml><link href=https://cestef.github.io/yctf.ch/atom.xml rel=alternate title=RSS type=application/atom+xml><script crossorigin src=https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js></script><script crossorigin src=https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.basic.min.js></script><script defer src=https://cestef.github.io/yctf.ch/js/main.js></script><script defer src=https://cestef.github.io/yctf.ch/search_index.en.js></script><body class=min-h-[100svh]><div class="w-[50svw] md:w-96 bg-popover absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 hidden shadow-lg" id=goto-popup><input class="w-full h-8 lg:h-12 px-2 py-1 lg:px-4 lg:py-2" id=goto-input placeholder=Search><div class="w-full h-0.5 bg-muted"></div><div class="w-full max-h-96 overflow-y-auto flex flex-col" id=goto-results></div></div><a class="top-0 left-0 fixed" href=https://cestef.github.io/yctf.ch> <div class="h-18 md:h-26 lg:h-32 p-2 md:p-4"><div class="w-full h-full flex items-center justify-center"><div class="w-full h-full [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain invert-colors select-none"><svg viewbox="0 0 300 300" fill=none id=screenshot-7d103f36-f396-80db-8006-db36b9f17880 version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=shape-7d103f36-f396-80db-8006-db36b9f17880 rx=0 ry=0><g id=shape-7d103f36-f396-80db-8006-db36b9f17882 rx=0 ry=0><g id=shape-7d103f36-f396-80db-8006-db36b9f17883><g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class=text-container height=126 rx=0 ry=0 width=124 x=26 y=24><defs><pattern height=170 id=fill-0-render-4-0 patternunits=objectBoundingBox width=77.40625><g><rect height=170 style=fill:#e63e3d;fill-opacity:1 width=77.40625 /></g></pattern></defs><g class=fills id=fills-7d103f36-f396-80db-8006-db36b9f17883><text style="text-transform:none;letter-spacing:normal;white-space:pre;fill:#e63e3d;fill-opacity:1;direction:ltr;font-family:JetBrains Mono;font-size:129px;font-style:normal;font-weight:800;text-decoration:none" dominant-baseline=ideographic lengthadjust=spacingAndGlyphs textlength=77.40625 x=49.296875 y=171.6015625>Y</text></g></g></g><g id=shape-7d103f36-f396-80db-8006-db36b9f17884><g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class=text-container height=126 rx=0 ry=0 width=124 x=150 y=24><defs><pattern height=170 id=fill-0-render-5-0 patternunits=objectBoundingBox width=77.40625><g><rect height=170 style=fill:#e63e3d;fill-opacity:1 width=77.40625 /></g></pattern></defs><g class=fills id=fills-7d103f36-f396-80db-8006-db36b9f17884><text style="text-transform:none;letter-spacing:normal;white-space:pre;fill:#e63e3d;fill-opacity:1;direction:ltr;font-family:JetBrains Mono;font-size:129px;font-style:normal;font-weight:800;text-decoration:none" dominant-baseline=ideographic lengthadjust=spacingAndGlyphs textlength=77.40625 x=173.296875 y=171.6015625>C</text></g></g></g><g id=shape-7d103f36-f396-80db-8006-db36b9f17885><g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class=text-container height=126 rx=0 ry=0 width=124 x=26 y=150><defs><pattern height=170 id=fill-0-render-6-0 patternunits=objectBoundingBox width=77.40625><g><rect height=170 style=fill:#e63e3d;fill-opacity:1 width=77.40625 /></g></pattern></defs><g class=fills id=fills-7d103f36-f396-80db-8006-db36b9f17885><text style="text-transform:none;letter-spacing:normal;white-space:pre;fill:#e63e3d;fill-opacity:1;direction:ltr;font-family:JetBrains Mono;font-size:129px;font-style:normal;font-weight:800;text-decoration:none" dominant-baseline=ideographic lengthadjust=spacingAndGlyphs textlength=77.40625 x=49.296875 y=297.6015625>T</text></g></g></g><g id=shape-7d103f36-f396-80db-8006-db36b9f17886><g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class=text-container height=126 rx=0 ry=0 width=124 x=150 y=150><defs><pattern height=170 id=fill-0-render-7-0 patternunits=objectBoundingBox width=77.40625><g><rect height=170 style=fill:#e63e3d;fill-opacity:1 width=77.40625 /></g></pattern></defs><g class=fills id=fills-7d103f36-f396-80db-8006-db36b9f17886><text style="text-transform:none;letter-spacing:normal;white-space:pre;fill:#e63e3d;fill-opacity:1;direction:ltr;font-family:JetBrains Mono;font-size:129px;font-style:normal;font-weight:800;text-decoration:none" dominant-baseline=ideographic lengthadjust=spacingAndGlyphs textlength=77.40625 x=173.296875 y=297.6015625>F</text></g></g></g></g></g></svg></div></div></div> </a><div class="text-secondary-foreground mx-6 md:py-2 py-1 font-black text-lg lg:text-xl top-0 right-0 fixed w-18 md:w-26 h-18 md:h-26 lg:h-32 p-2 md:p-4 text-center flex items-center justify-center"></div><main id=scroll-element><div class="mt-24 mx-4 mb-24 sm:mx-0"><article class="prose dark:prose-invert mx-auto lg:prose-lg"><h1>System Code <span class="text-muted-foreground text-xl">by mango, cstef, Tyr</span></h1><div class="flex flex-row gap-4 items-center"><span><strong>2024-09-30</strong></span><span class=text-muted-foreground>(1 min. read)</span> - <span class="flex flex-row gap-2"> <a class="bg-accent text-accent-foreground px-2 py-1 rounded-md text-sm w-fit font-bold no-underline" href=/misc> misc </a> </span><div class=flex-grow></div></div><h2 id=description>Description</h2><p>Follow the white rabbit.<p>NOTE: Bruteforce is permitted for this challenge instance if you feel it is necessary.<p>Press the Start button on the top-right to begin this challenge.<hr><p>What we tried:<ul><li>Enum on <code>/</code> and <code>/enter=</code> with <code>gobuster</code> and custom + <code>rockyou.txt</code> wordlists<li>Bruteforce on <code>/enter=</code> with <code>ffuf</code> and custom + <code>rockyou.txt</code><li>Recon using <code>finalrecon</code> - Header inspection - DNS records - WHOIS - URLs inside js/sitemap - Images<li>Looking through library assets, they all match the original</ul><h2 id=matrix-library-diffing-with-original-source>Matrix library diffing with original source</h2><pre class="language-diff z-code" data-lang=diff><code class=language-diff data-lang=diff><span class="z-source z-diff">diff -bur ../../matrix-code-github/js/config.js ./config.js
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-from-file"><span class="z-meta z-header z-from-file z-diff"><span class="z-punctuation z-definition z-from-file z-diff">---</span> ../../matrix-code-github/js/config.js	2024-10-08 14:28:11.071705089 +0200
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-to-file"><span class="z-meta z-header z-to-file z-diff"><span class="z-punctuation z-definition z-to-file z-diff">+++</span> ./config.js	2024-10-08 19:00:47.525132778 +0200
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-124,6 +124,7</span> <span class="z-punctuation z-definition z-range z-diff">@@</span>
+</span></span></span><span class="z-source z-diff"> 	useHalfFloat: false,
+</span><span class="z-source z-diff"> 	renderer: "regl", // The preferred web graphics API
+</span><span class="z-source z-diff"> 	suppressWarnings: false, // Whether to show warnings to visitors on load
+</span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  backupGlyphsTwr: ["a", "b", "c", "d", "e", "f"], // The characters to fallback to if glyphs fail to load
+</span></span><span class="z-source z-diff"> 	isometric: false,
+</span><span class="z-source z-diff"> 	useHoloplay: false,
+</span><span class="z-source z-diff"> 	loops: false,
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-132,138 +133,7</span> <span class="z-punctuation z-definition z-range z-diff">@@</span>
+</span></span></span><span class="z-source z-diff"> };
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> const versions = {
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	classic: {},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	megacity: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "megacity",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		animationSpeed: 0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 40,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	neomatrixology: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "neomatrixology",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		animationSpeed: 0.8,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 40,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 0.9, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 0.9, 0.2), at: 0.2 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 0.9, 0.7), at: 0.7 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 0.9, 0.8), at: 0.8 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.167, 1, 0.75),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	operator: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.375, 1, 0.66),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomSize: 0.6,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.75,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0.0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.01,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleFrameSkip: 8,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		brightnessOverride: 0.22,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		brightnessThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.6,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphEdgeCrop: 0.15,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphHeightToWidth: 1.35,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		rippleTypeName: "box",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 108,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.4, 0.8, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.4, 0.8, 0.5), at: 0.5 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.4, 0.8, 1.0), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	nightmare: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "gothic",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateCursor: false,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.8,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		brightnessDecay: 0.75,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 1.2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		hasThunder: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 60,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.35,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.0, 1.0, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.0, 1.0, 0.2), at: 0.2 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.0, 1.0, 0.4), at: 0.4 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.1, 1.0, 0.7), at: 0.7 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.2, 1.0, 1.0), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		slant: (22.5 * Math.PI) / 180,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	paradise: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "coptic",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateCursor: false,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.005,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -1.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		brightnessDecay: 0.05,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.02,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isPolar: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		rippleTypeName: "circle",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		rippleSpeed: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 40,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.0, 0.0, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.0, 0.8, 0.3), at: 0.3 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.1, 0.8, 0.5), at: 0.5 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.1, 1.0, 0.6), at: 0.6 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.1, 1.0, 0.9), at: 0.9 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.4,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	resurrections: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "resurrections",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphEdgeCrop: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.292, 1, 0.8),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 1.17,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 70,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.03,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.375, 0.9, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.375, 1.0, 0.6), at: 0.92 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.375, 1.0, 1.0), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	trinity: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "resurrections",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintTexture: "metal",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseTexture: "pixels",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphEdgeCrop: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.292, 1, 0.8),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateGlint: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintColor: hsl(0.131, 1, 0.6),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintIntensity: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintBrightness: -0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.4,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 60,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.03,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.37, 0.6, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.37, 0.6, 0.5), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.01,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		volumetric: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		forwardSpeed: 0.2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		density: 0.75,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	morpheus: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  classic: {
+</span></span><span class="z-source z-diff"> 		font: "resurrections",
+</span><span class="z-source z-diff"> 		glintTexture: "mesh",
+</span><span class="z-source z-diff"> 		baseTexture: "metal",
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-283,8 +153,8</span> <span class="z-punctuation z-definition z-range z-diff">@@</span>
+</span></span></span><span class="z-source z-diff"> 		bloomStrength: 0.7,
+</span><span class="z-source z-diff"> 		fallSpeed: 0.3,
+</span><span class="z-source z-diff"> 		palette: [
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.97, 0.6, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.97, 0.6, 0.5), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      { color: hsl(0.51, 0.74, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      { color: hsl(0.51, 0.74, 0.5), at: 1.0 },
+</span></span><span class="z-source z-diff"> 		],
+</span><span class="z-source z-diff"> 		cycleSpeed: 0.015,
+</span><span class="z-source z-diff"> 		volumetric: true,
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-292,109 +162,6</span> <span class="z-punctuation z-definition z-range z-diff">@@</span>
+</span></span></span><span class="z-source z-diff"> 		raindropLength: 0.4,
+</span><span class="z-source z-diff"> 		density: 0.75,
+</span><span class="z-source z-diff"> 	},
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	bugs: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "resurrections",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintTexture: "sand",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseTexture: "metal",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphEdgeCrop: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.619, 1, 0.65),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateGlint: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintColor: hsl(0.625, 1, 0.6),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintIntensity: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintBrightness: -1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintContrast: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 60,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.03,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.12, 0.6, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.14, 0.6, 0.5), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.01,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		volumetric: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		forwardSpeed: 0.4,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		density: 0.75,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	palimpsest: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "huberfishA",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateCursor: false,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 40,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 1.2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleFrameSkip: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		slant: Math.PI * -0.0625,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 0.25, 0.9), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.6, 0.8, 0.1), at: 0.4 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	twilight: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "huberfishD",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.167, 1, 0.8),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 50,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.9,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0.0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.6, 1.0, 0.05), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.6, 0.8, 0.1), at: 0.1 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.88, 0.8, 0.5), at: 0.5 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.15, 1.0, 0.6), at: 0.8 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			// { color: hsl(0.1, 1.0, 0.9), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	holoplay: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		font: "resurrections",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintTexture: "metal",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glyphEdgeCrop: 0.1,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorColor: hsl(0.292, 1, 0.8),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cursorIntensity: 2,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		isolateGlint: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintColor: hsl(0.131, 1, 0.6),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintIntensity: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintBrightness: -0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		glintContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.4,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		highPassThreshold: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.03,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0.7,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		palette: [
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.37, 0.6, 0.0), at: 0.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			{ color: hsl(0.37, 0.6, 0.5), at: 1.0 },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.01,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		renderer: "regl",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		numColumns: 20,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		ditherMagnitude: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		bloomStrength: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		volumetric: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		forwardSpeed: 0,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		density: 3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		useHoloplay: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	["3d"]: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		volumetric: true,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		fallSpeed: 0.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		cycleSpeed: 0.03,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseBrightness: -0.9,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		baseContrast: 1.5,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		raindropLength: 0.3,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"> };
+</span><span class="z-source z-diff"> versions.throwback = versions.operator;
+</span><span class="z-source z-diff"> versions.updated = versions.resurrections;
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-402,171 +169,34</span> <span class="z-punctuation z-definition z-range z-diff">@@</span>
+</span></span></span><span class="z-source z-diff"> versions["2003"] = versions.classic;
+</span><span class="z-source z-diff"> versions["2021"] = versions.resurrections;
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const range = (f, min = -Infinity, max = Infinity) => Math.max(min, Math.min(max, f));
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>const range = (f, min = -Infinity, max = Infinity) =>
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  Math.max(min, Math.min(max, f));
+</span></span><span class="z-source z-diff"> const nullNaN = (f) => (isNaN(f) ? null : f);
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const isTrue = (s) => s.toLowerCase().includes("true");
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const parseColor = (isHSL) => (s) => ({
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	space: isHSL ? "hsl" : "rgb",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	values: s.split(",").map(parseFloat),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>});
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const parseColors = (isHSL) => (s) => {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const values = s.split(",").map(parseFloat);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const space = isHSL ? "hsl" : "rgb";
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	return Array(Math.floor(values.length / 3))
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		.fill()
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		.map((_, index) => ({
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			space,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			values: values.slice(index * 3, (index + 1) * 3),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		}));
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>};
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const parsePalette = (isHSL) => (s) => {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const values = s.split(",").map(parseFloat);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const space = isHSL ? "hsl" : "rgb";
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	return Array(Math.floor(values.length / 4))
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		.fill()
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		.map((_, index) => {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			const colorValues = values.slice(index * 4, (index + 1) * 4);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			return {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>				color: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>					space,
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>					values: colorValues.slice(0, 3),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>				},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>				at: colorValues[3],
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			};
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		});
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>};
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>const paramMapping = {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	testFix: { key: "testFix", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	version: { key: "version", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	font: { key: "font", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	effect: { key: "effect", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	camera: { key: "useCamera", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	numColumns: { key: "numColumns", parser: (s) => nullNaN(parseInt(s)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	density: { key: "density", parser: (s) => nullNaN(range(parseFloat(s), 0)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	resolution: { key: "resolution", parser: (s) => nullNaN(parseFloat(s)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	animationSpeed: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "animationSpeed",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(parseFloat(s)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	forwardSpeed: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "forwardSpeed",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(parseFloat(s)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	cycleSpeed: { key: "cycleSpeed", parser: (s) => nullNaN(parseFloat(s)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	fallSpeed: { key: "fallSpeed", parser: (s) => nullNaN(parseFloat(s)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	raindropLength: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "raindropLength",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(parseFloat(s)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	slant: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "slant",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN((parseFloat(s) * Math.PI) / 180),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	bloomSize: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "bloomSize",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, 1)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	bloomStrength: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "bloomStrength",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, 1)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	ditherMagnitude: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "ditherMagnitude",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, 1)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	url: { key: "bgURL", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	palette: { key: "palette", parser: parsePalette(false) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	stripeColors: { key: "stripeColors", parser: parseColors(false) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	backgroundColor: { key: "backgroundColor", parser: parseColor(false) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	cursorColor: { key: "cursorColor", parser: parseColor(false) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	glintColor: { key: "glintColor", parser: parseColor(false) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	paletteHSL: { key: "palette", parser: parsePalette(true) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	stripeHSL: { key: "stripeColors", parser: parseColors(true) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	backgroundHSL: { key: "backgroundColor", parser: parseColor(true) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	cursorHSL: { key: "cursorColor", parser: parseColor(true) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	glintHSL: { key: "glintColor", parser: parseColor(true) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	cursorIntensity: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "cursorIntensity",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, Infinity)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	glyphIntensity: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "glyphIntensity",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, Infinity)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	volumetric: { key: "volumetric", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	glyphFlip: { key: "glyphFlip", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	glyphRotation: {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		key: "glyphRotation",
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		parser: (s) => nullNaN(range(parseFloat(s), 0, Infinity)),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	},
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	loops: { key: "loops", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	fps: { key: "fps", parser: (s) => nullNaN(range(parseFloat(s), 0, 60)) },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	skipIntro: { key: "skipIntro", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	renderer: { key: "renderer", parser: (s) => s },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	suppressWarnings: { key: "suppressWarnings", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	once: { key: "once", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	isometric: { key: "isometric", parser: isTrue },
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>};
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.paletteRGB = paramMapping.palette;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.stripeRGB = paramMapping.stripeColors;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.backgroundRGB = paramMapping.backgroundColor;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.cursorRGB = paramMapping.cursorColor;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.glintRGB = paramMapping.glintColor;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.width = paramMapping.numColumns;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.dropLength = paramMapping.raindropLength;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.angle = paramMapping.slant;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>paramMapping.colors = paramMapping.stripeColors;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export default (urlParams) => {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const validParams = Object.fromEntries(
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		Object.entries(urlParams)
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			.filter(([key]) => key in paramMapping)
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			.map(([key, value]) => [paramMapping[key].key, paramMapping[key].parser(value)])
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			.filter(([_, value]) => value != null),
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	if (validParams.effect != null) {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		if (validParams.cursorColor == null) {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			validParams.cursorColor = hsl(0, 0, 1);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		}
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		if (validParams.cursorIntensity == null) {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			validParams.cursorIntensity = 2;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		}
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		if (validParams.glintColor == null) {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			validParams.glintColor = hsl(0, 0, 1);
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		}
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		if (validParams.glyphIntensity == null) {
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>			validParams.glyphIntensity = 1;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		}
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	}
+</span></span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const version = validParams.version in versions ? versions[validParams.version] : versions.classic;
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const fontName = [validParams.font, version.font, defaults.font].find((name) => name in fonts);
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export default () => {
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  const version = versions.classic;
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  const fontName = [version.font, defaults.font].find((name) => name in fonts);
+</span></span><span class="z-source z-diff"> 	const font = fonts[fontName];
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const baseTextureURL = textureURLs[[version.baseTexture, defaults.baseTexture].find((name) => name in textureURLs)];
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  const baseTextureURL =
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>    textureURLs[
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      [version.baseTexture, defaults.baseTexture].find(
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>        (name) => name in textureURLs
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      )
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>    ];
+</span></span><span class="z-source z-diff"> 	const hasBaseTexture = baseTextureURL != null;
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	const glintTextureURL = textureURLs[[version.glintTexture, defaults.glintTexture].find((name) => name in textureURLs)];
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>  const glintTextureURL =
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>    textureURLs[
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      [version.glintTexture, defaults.glintTexture].find(
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>        (name) => name in textureURLs
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>      )
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>    ];
+</span></span><span class="z-source z-diff"> 	const hasGlintTexture = glintTextureURL != null;
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> 	const config = {
+</span><span class="z-source z-diff"> 		...defaults,
+</span><span class="z-source z-diff"> 		...version,
+</span><span class="z-source z-diff"> 		...font,
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		...validParams,
+</span></span><span class="z-source z-diff"> 		baseTextureURL,
+</span><span class="z-source z-diff"> 		glintTextureURL,
+</span><span class="z-source z-diff"> 		hasBaseTexture,
+</span><span class="z-source z-diff">Only in .: lib
+</span><span class="z-source z-diff">Only in ../../matrix-code-github/js/: webgpu
+</span></code></pre></article></div></main><div class="bg-secondary text-primary-foreground w-fit fixed bottom-4 float-right right-8 transition-all duration-200 opacity-0" title="Scroll to top" id=scroll-to-top><div class="bg-primary h-full absolute -z-10" id=scroll-fill></div><svg class="h-6 w-6 mx-4 md:my-2 my-1 fill-primary-foreground" viewbox="0 0 16 16" xmlns=http://www.w3.org/2000/svg><path d="M3.47 7.78a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0l4.25 4.25a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018L9 4.81v7.44a.75.75 0 0 1-1.5 0V4.81L4.53 7.78a.75.75 0 0 1-1.06 0Z"></path></svg></div>
