@@ -71,4 +71,4 @@ no_upcoming_events = "No upcoming events"
 no_events = "No events"
 
 [extra]
-repository = "https://github.com/y-ctf/site"
+repository = "https://github.com/y-ctf/y-ctf.github.io"
