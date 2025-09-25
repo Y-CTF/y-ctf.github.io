@@ -13,7 +13,7 @@ Rejoins-nous via ce formulaire qui te donnera ensuite accès au serveur Discord 
 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3DWtiLpi9OEljdBpNflYOw4kBDGMT1cAW-Gn4Feg8isLUA/viewform?usp=sf_link" class="btn btn-primary"><b>docs.google.com</b></a>
 </p>
 
-En cas de question, n’hésite pas à contacter le ou la [responsable des membres](@/pages/contact.fr.md).
+En cas de question, n’hésite pas à contacter le ou la [responsable des membres](mailto:y-ctf@heig-vd.ch).
 
 ## Séance d’information
 

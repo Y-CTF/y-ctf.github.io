@@ -13,7 +13,7 @@ Join us via this form, which will grant you access to the club’s Discord serve
 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3DWtiLpi9OEljdBpNflYOw4kBDGMT1cAW-Gn4Feg8isLUA/viewform?usp=sf_link" class="btn btn-primary"><b>docs.google.com</b></a>
 </p>
 
-If you have any questions, feel free to contact the [Member Manager](@/pages/contact.md).
+If you have any questions, feel free to contact the [Member Manager](mailto:y-ctf@heig-vd.ch).
 
 ## Information Session
 
