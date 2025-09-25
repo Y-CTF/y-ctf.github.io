@@ -1,245 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://cestef.github.io/yctf.ch/</loc>
+        <loc>https://yctf.ch/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/about/</loc>
+        <loc>https://yctf.ch/about/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/archive/</loc>
+        <loc>https://yctf.ch/archive/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/</loc>
+        <loc>https://yctf.ch/categories/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/crypto/</loc>
+        <loc>https://yctf.ch/categories/crypto/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/forensics/</loc>
+        <loc>https://yctf.ch/categories/forensics/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/malware/</loc>
+        <loc>https://yctf.ch/categories/malware/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/misc/</loc>
+        <loc>https://yctf.ch/categories/misc/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/osint/</loc>
+        <loc>https://yctf.ch/categories/osint/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/pwn/</loc>
+        <loc>https://yctf.ch/categories/pwn/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/reverse/</loc>
+        <loc>https://yctf.ch/categories/reverse/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/scripting/</loc>
+        <loc>https://yctf.ch/categories/scripting/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/categories/warmups/</loc>
+        <loc>https://yctf.ch/categories/warmups/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/committee/</loc>
+        <loc>https://yctf.ch/committee/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/events/</loc>
+        <loc>https://yctf.ch/events/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/</loc>
+        <loc>https://yctf.ch/fr/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/about/</loc>
+        <loc>https://yctf.ch/fr/about/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/categories/</loc>
+        <loc>https://yctf.ch/fr/categories/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/commitee/</loc>
+        <loc>https://yctf.ch/fr/commitee/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/inscription/</loc>
+        <loc>https://yctf.ch/fr/inscription/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/fr/pages/events/</loc>
+        <loc>https://yctf.ch/fr/pages/events/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/inscription/</loc>
+        <loc>https://yctf.ch/inscription/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/</loc>
+        <loc>https://yctf.ch/writeups/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/black-alps/</loc>
+        <loc>https://yctf.ch/writeups/black-alps/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/black-alps/cake/</loc>
+        <loc>https://yctf.ch/writeups/black-alps/cake/</loc>
         <lastmod>2023-11-04</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/buckeye/</loc>
+        <loc>https://yctf.ch/writeups/buckeye/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/</loc>
+        <loc>https://yctf.ch/writeups/buckeye/defective-rsa/</loc>
         <lastmod>2021-10-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/</loc>
+        <loc>https://yctf.ch/writeups/buckeye/elliptigo/</loc>
         <lastmod>2021-10-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/</loc>
+        <loc>https://yctf.ch/writeups/buckeye/key-exchange/</loc>
         <lastmod>2021-10-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/crypto/</loc>
+        <loc>https://yctf.ch/writeups/crypto/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/crypto/farm/</loc>
+        <loc>https://yctf.ch/writeups/crypto/farm/</loc>
         <lastmod>2021-08-01</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/crypto/keybase/</loc>
+        <loc>https://yctf.ch/writeups/crypto/keybase/</loc>
         <lastmod>2021-08-28</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/crypto/wolf/</loc>
+        <loc>https://yctf.ch/writeups/crypto/wolf/</loc>
         <lastmod>2021-08-03</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/</loc>
+        <loc>https://yctf.ch/writeups/huntress/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</loc>
+        <loc>https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/</loc>
+        <loc>https://yctf.ch/writeups/huntress/backdoored-splunk-ii/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/base-p/</loc>
+        <loc>https://yctf.ch/writeups/huntress/base-p/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/</loc>
+        <loc>https://yctf.ch/writeups/huntress/discount-programming-devices/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/</loc>
+        <loc>https://yctf.ch/writeups/huntress/echo-chamber/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/</loc>
+        <loc>https://yctf.ch/writeups/huntress/finder-s-fee/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/</loc>
+        <loc>https://yctf.ch/writeups/huntress/gocrackme1/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/</loc>
+        <loc>https://yctf.ch/writeups/huntress/gocrackme3/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/malibu/</loc>
+        <loc>https://yctf.ch/writeups/huntress/malibu/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/mimi/</loc>
+        <loc>https://yctf.ch/writeups/huntress/mimi/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/mystery/</loc>
+        <loc>https://yctf.ch/writeups/huntress/mystery/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/</loc>
+        <loc>https://yctf.ch/writeups/huntress/no-need-for-brutus/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/</loc>
+        <loc>https://yctf.ch/writeups/huntress/oceanlocust/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/</loc>
+        <loc>https://yctf.ch/writeups/huntress/pillowfight/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/</loc>
+        <loc>https://yctf.ch/writeups/huntress/plantopia/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/</loc>
+        <loc>https://yctf.ch/writeups/huntress/ran-somewhere/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/</loc>
+        <loc>https://yctf.ch/writeups/huntress/russian-roulette/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/rustline/</loc>
+        <loc>https://yctf.ch/writeups/huntress/rustline/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/</loc>
+        <loc>https://yctf.ch/writeups/huntress/strange-calc/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</loc>
+        <loc>https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/system-code/</loc>
+        <loc>https://yctf.ch/writeups/huntress/system-code/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/the-void/</loc>
+        <loc>https://yctf.ch/writeups/huntress/the-void/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/</loc>
+        <loc>https://yctf.ch/writeups/huntress/too-many-bits/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/</loc>
+        <loc>https://yctf.ch/writeups/huntress/txt-message/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/</loc>
+        <loc>https://yctf.ch/writeups/huntress/x-ray/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/huntress/y2j/</loc>
+        <loc>https://yctf.ch/writeups/huntress/y2j/</loc>
         <lastmod>2024-09-30</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/insomnihack/</loc>
+        <loc>https://yctf.ch/writeups/insomnihack/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/</loc>
+        <loc>https://yctf.ch/writeups/insomnihack/frosties/</loc>
         <lastmod>2025-03-15</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/redpwn/</loc>
+        <loc>https://yctf.ch/writeups/redpwn/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/redpwn/baby/</loc>
+        <loc>https://yctf.ch/writeups/redpwn/baby/</loc>
         <lastmod>2021-07-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/</loc>
+        <loc>https://yctf.ch/writeups/redpwn/bread-making/</loc>
         <lastmod>2021-07-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/</loc>
+        <loc>https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/</loc>
         <lastmod>2021-07-27</lastmod>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/tryhackme/</loc>
+        <loc>https://yctf.ch/writeups/tryhackme/</loc>
     </url>
     <url>
-        <loc>https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/</loc>
+        <loc>https://yctf.ch/writeups/tryhackme/solar/</loc>
         <lastmod>2021-12-15</lastmod>
     </url>
 </urlset>

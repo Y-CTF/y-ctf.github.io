@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://cestef.github.io/yctf.ch/sitemap.xml
+Sitemap: https://yctf.ch/sitemap.xml

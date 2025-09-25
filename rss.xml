@@ -2,27 +2,27 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title></title>
-      <link>https://cestef.github.io/yctf.ch/</link>
+      <link>https://yctf.ch/</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://cestef.github.io/yctf.ch/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://yctf.ch/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
       <item>
           <title>FROSTies</title>
           <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/"></description>
+          <link>https://yctf.ch/writeups/insomnihack/frosties/</link>
+          <guid>https://yctf.ch/writeups/insomnihack/frosties/</guid>
+          <description xml:base="https://yctf.ch/writeups/insomnihack/frosties/"></description>
       </item>
       <item>
           <title>Baby Buffer Overflow - 32bit</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/">Can you command this program to where it cannot go?
+          <link>https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</link>
+          <guid>https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/">Can you command this program to where it cannot go?
 To get the flag, you must somehow take control of its excecution.
 Is it even possible?</description>
       </item>
@@ -30,9 +30,9 @@ Is it even possible?</description>
           <title>Backdoored Splunk II</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Tyr</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/">You&#x27;ve probably seen Splunk being used for good, but have you seen it used for evil?  
+          <link>https://yctf.ch/writeups/huntress/backdoored-splunk-ii/</link>
+          <guid>https://yctf.ch/writeups/huntress/backdoored-splunk-ii/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/backdoored-splunk-ii/">You&#x27;ve probably seen Splunk being used for good, but have you seen it used for evil?  
   
 **NOTE: the focus of this challenge should be on the downloadable file below. It uses the dynamic service that is started, but you must put the puzzle pieces together to be retrieve the flag.**  
   
@@ -42,9 +42,9 @@ Is it even possible?</description>
           <title>Base-p-</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Tyr</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/base-p/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/base-p/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/base-p/">That looks like a weird encoding, I wonder what it&#x27;s based on.
+          <link>https://yctf.ch/writeups/huntress/base-p/</link>
+          <guid>https://yctf.ch/writeups/huntress/base-p/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/base-p/">That looks like a weird encoding, I wonder what it&#x27;s based on.
 
 Download the file(s) below. </description>
       </item>
@@ -52,9 +52,9 @@ Download the file(s) below. </description>
           <title>Discount Programming Devices</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/">I used a tool on the internet to obfuscate my script!
+          <link>https://yctf.ch/writeups/huntress/discount-programming-devices/</link>
+          <guid>https://yctf.ch/writeups/huntress/discount-programming-devices/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/discount-programming-devices/">I used a tool on the internet to obfuscate my script!
 But I lost it, and I don&#x27;t know how to get it back.
 Maybe you can help?</description>
       </item>
@@ -62,17 +62,17 @@ Maybe you can help?</description>
           <title>Echo Chamber</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/">Is anyone there? Is anyone there? I&#x27;m sending myself the flag! I&#x27;m sending myself the flag! </description>
+          <link>https://yctf.ch/writeups/huntress/echo-chamber/</link>
+          <guid>https://yctf.ch/writeups/huntress/echo-chamber/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/echo-chamber/">Is anyone there? Is anyone there? I&#x27;m sending myself the flag! I&#x27;m sending myself the flag! </description>
       </item>
       <item>
           <title>Finder&#x27;s Fee</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>mango</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/">You gotta make sure the people who find stuff for you are rewarded well!
+          <link>https://yctf.ch/writeups/huntress/finder-s-fee/</link>
+          <guid>https://yctf.ch/writeups/huntress/finder-s-fee/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/finder-s-fee/">You gotta make sure the people who find stuff for you are rewarded well!
 
 Escalate your privileges and uncover the flag.txt in the finder user&#x27;s home directory.
 
@@ -86,9 +86,9 @@ ssh -p 30668 user@challenge.ctf.games</description>
           <title>GoCrackMe1</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/">TENNNNNN-HUT!
+          <link>https://yctf.ch/writeups/huntress/gocrackme1/</link>
+          <guid>https://yctf.ch/writeups/huntress/gocrackme1/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/gocrackme1/">TENNNNNN-HUT!
 
 Welcome to the Go Dojo, gophers in training!
 
@@ -100,25 +100,25 @@ First up is the easiest of the three. Go get em! </description>
           <title>GoCrackMe3</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/">You&#x27;ve trained, you&#x27;ve failed, you&#x27;ve succeeded, you&#x27;ve learned. Everything you&#x27;ve done up to this point has prepared you for this moment. Don&#x27;t let me down, Gopher. Don&#x27;t let me down.</description>
+          <link>https://yctf.ch/writeups/huntress/gocrackme3/</link>
+          <guid>https://yctf.ch/writeups/huntress/gocrackme3/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/gocrackme3/">You&#x27;ve trained, you&#x27;ve failed, you&#x27;ve succeeded, you&#x27;ve learned. Everything you&#x27;ve done up to this point has prepared you for this moment. Don&#x27;t let me down, Gopher. Don&#x27;t let me down.</description>
       </item>
       <item>
           <title>Malibu</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/malibu/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/malibu/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/malibu/">What do you bring to the beach?</description>
+          <link>https://yctf.ch/writeups/huntress/malibu/</link>
+          <guid>https://yctf.ch/writeups/huntress/malibu/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/malibu/">What do you bring to the beach?</description>
       </item>
       <item>
           <title>Mimi</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>mango</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/mimi/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/mimi/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/mimi/">Uh oh! Mimi forgot her password for her Windows laptop!
+          <link>https://yctf.ch/writeups/huntress/mimi/</link>
+          <guid>https://yctf.ch/writeups/huntress/mimi/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/mimi/">Uh oh! Mimi forgot her password for her Windows laptop!
 
 Luckily, she dumped one of the crucial processes running on her computer (don&#x27;t ask me why, okay)... can you help her recover her password?
 
@@ -128,9 +128,9 @@ NOTE: Archive password is mimi</description>
           <title>Mystery</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Ary.eth</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/mystery/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/mystery/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/mystery/">Someone sent this to me...
+          <link>https://yctf.ch/writeups/huntress/mystery/</link>
+          <guid>https://yctf.ch/writeups/huntress/mystery/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/mystery/">Someone sent this to me...
 such enigma, such mystery:
 
 rkenr wozec gtrfl obbur bfgma fkgyq ctkvq zeucz hlvwx yyzat zbvns kgyyd sthmi vsifc ovexl zzdqv slyir nwqoj igxuu kdqgr fdbbd njppc mujyy wwcoy
@@ -150,9 +150,9 @@ Settings as below:
           <title>No need for Brutus</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Ary.eth</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/">Author: @aenygma
+          <link>https://yctf.ch/writeups/huntress/no-need-for-brutus/</link>
+          <guid>https://yctf.ch/writeups/huntress/no-need-for-brutus/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/no-need-for-brutus/">Author: @aenygma
 
 A simple message for you to decipher:
 
@@ -166,9 +166,9 @@ Ex: If the deciphered text is &quot;hello world&quot;, the MD5 hash would be 5eb
           <title>OceanLocust</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>mango</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/">Wow-ee zow-ee!! Some advanced persistent threats have been doing some tricks with hiding payloads in image files!
+          <link>https://yctf.ch/writeups/huntress/oceanlocust/</link>
+          <guid>https://yctf.ch/writeups/huntress/oceanlocust/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/oceanlocust/">Wow-ee zow-ee!! Some advanced persistent threats have been doing some tricks with hiding payloads in image files!
 
 We thought we would try our hand at it too.
 
@@ -178,9 +178,9 @@ NOTE: this challenge includes a debug build of the binary used to craft the imag
           <title>PillowFight</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Tyr</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/">PillowFight uses _**advanced AI&#x2F;MLRegressionLearning**_ to combine two images of your choosing  
+          <link>https://yctf.ch/writeups/huntress/pillowfight/</link>
+          <guid>https://yctf.ch/writeups/huntress/pillowfight/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/pillowfight/">PillowFight uses _**advanced AI&#x2F;MLRegressionLearning**_ to combine two images of your choosing  
   
 *note to investors this is not techically true at the moment we&#x27;re using a python library but please give us money and we&#x27;ll deliver it we promise.  
   
@@ -190,9 +190,9 @@ NOTE: this challenge includes a debug build of the binary used to craft the imag
           <title>Plantopia</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Tyr</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/">Plantopia is our brand-new, cutting-edge plant care management website! Designed for hobbyists and professionals alike, it&#x27;s your one-stop shop for all plant care needs.  
+          <link>https://yctf.ch/writeups/huntress/plantopia/</link>
+          <guid>https://yctf.ch/writeups/huntress/plantopia/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/plantopia/">Plantopia is our brand-new, cutting-edge plant care management website! Designed for hobbyists and professionals alike, it&#x27;s your one-stop shop for all plant care needs.  
   
 Please perform a penetration test before our site launch and let us know if you find any issues.  
   
@@ -205,9 +205,9 @@ Password: `testpassword`
           <title>Ran Somewhere</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Ary.eth</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/">Thanks for joining the help desk! Here&#x27;s your first ticket of the day; can you help the client out?
+          <link>https://yctf.ch/writeups/huntress/ran-somewhere/</link>
+          <guid>https://yctf.ch/writeups/huntress/ran-somewhere/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/ran-somewhere/">Thanks for joining the help desk! Here&#x27;s your first ticket of the day; can you help the client out?
 
 NOTE, this challenge uses a non-standard flag format. Enter the human-readable name of the location. </description>
       </item>
@@ -215,17 +215,17 @@ NOTE, this challenge uses a non-standard flag format. Enter the human-readable n
           <title>Russian Roulette</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/">My PowerShell has been acting really weird!! It takes a few seconds to start up, and sometimes it just crashes my computer!?!?! :(</description>
+          <link>https://yctf.ch/writeups/huntress/russian-roulette/</link>
+          <guid>https://yctf.ch/writeups/huntress/russian-roulette/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/russian-roulette/">My PowerShell has been acting really weird!! It takes a few seconds to start up, and sometimes it just crashes my computer!?!?! :(</description>
       </item>
       <item>
           <title>Rustline</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/rustline/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/rustline/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/rustline/">Jerry: A Redline Stealer.
+          <link>https://yctf.ch/writeups/huntress/rustline/</link>
+          <guid>https://yctf.ch/writeups/huntress/rustline/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/rustline/">Jerry: A Redline Stealer.
 George: Written in Rust.
 Jerry: A Rusty Redline Stealer.
 George: A Rusty Redline Stealer, Jerry!
@@ -236,17 +236,17 @@ We caught a Redline variant executing on an endpoint and intercepted the encrypt
           <title>Strange Calc</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>cstef</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/">I got this new calculator app from my friend! But it&#x27;s really weird, for some reason it needs admin permissions to run??</description>
+          <link>https://yctf.ch/writeups/huntress/strange-calc/</link>
+          <guid>https://yctf.ch/writeups/huntress/strange-calc/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/strange-calc/">I got this new calculator app from my friend! But it&#x27;s really weird, for some reason it needs admin permissions to run??</description>
       </item>
       <item>
           <title>Strive Marish Leadman TypeCDR</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/">Looks like primo hex garbage.
+          <link>https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</link>
+          <guid>https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/">Looks like primo hex garbage.
 Maybe something went wrong?
 Can you make sense of it? </description>
       </item>
@@ -254,9 +254,9 @@ Can you make sense of it? </description>
           <title>System Code</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>mango</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/system-code/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/system-code/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/system-code/">Follow the white rabbit.
+          <link>https://yctf.ch/writeups/huntress/system-code/</link>
+          <guid>https://yctf.ch/writeups/huntress/system-code/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/system-code/">Follow the white rabbit.
 
 NOTE: Bruteforce is permitted for this challenge instance if you feel it is necessary.
 
@@ -266,17 +266,17 @@ Press the Start button on the top-right to begin this challenge. </description>
           <title>The Void</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>ary.eth</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/the-void/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/the-void/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/the-void/">When you gaze long into the void, the void gazes also into you...</description>
+          <link>https://yctf.ch/writeups/huntress/the-void/</link>
+          <guid>https://yctf.ch/writeups/huntress/the-void/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/the-void/">When you gaze long into the void, the void gazes also into you...</description>
       </item>
       <item>
           <title>Too Many Bits</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Ary.eth</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/">Author: @JohnHammond
+          <link>https://yctf.ch/writeups/huntress/too-many-bits/</link>
+          <guid>https://yctf.ch/writeups/huntress/too-many-bits/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/too-many-bits/">Author: @JohnHammond
 
 What do all these ones and zero&#x27;s mean!?! We are in the Warmups category after all...
 
@@ -286,25 +286,25 @@ What do all these ones and zero&#x27;s mean!?! We are in the Warmups category af
           <title>TXT Message</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/">Hmmm, have you seen some of the strange DNS records for the ctf.games domain? One of them sure is odd... </description>
+          <link>https://yctf.ch/writeups/huntress/txt-message/</link>
+          <guid>https://yctf.ch/writeups/huntress/txt-message/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/txt-message/">Hmmm, have you seen some of the strange DNS records for the ctf.games domain? One of them sure is odd... </description>
       </item>
       <item>
           <title>X-RAY</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/">The SOC detected malware on a host, but antivirus already quarantined it... can you still make sense of what it does? </description>
+          <link>https://yctf.ch/writeups/huntress/x-ray/</link>
+          <guid>https://yctf.ch/writeups/huntress/x-ray/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/x-ray/">The SOC detected malware on a host, but antivirus already quarantined it... can you still make sense of what it does? </description>
       </item>
       <item>
           <title>Y2J</title>
           <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
           <author>glys</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/huntress/y2j/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/huntress/y2j/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/huntress/y2j/">Everyone was so worried about Y2K, but apparently it was a typo all along!!
+          <link>https://yctf.ch/writeups/huntress/y2j/</link>
+          <guid>https://yctf.ch/writeups/huntress/y2j/</guid>
+          <description xml:base="https://yctf.ch/writeups/huntress/y2j/">Everyone was so worried about Y2K, but apparently it was a typo all along!!
 
 The real world-ending fears were from Y2J! </description>
       </item>
@@ -312,89 +312,89 @@ The real world-ending fears were from Y2J! </description>
           <title>Cake</title>
           <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
           <author>damien-maier</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/black-alps/cake/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/black-alps/cake/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/black-alps/cake/"></description>
+          <link>https://yctf.ch/writeups/black-alps/cake/</link>
+          <guid>https://yctf.ch/writeups/black-alps/cake/</guid>
+          <description xml:base="https://yctf.ch/writeups/black-alps/cake/"></description>
       </item>
       <item>
           <title>Solar</title>
           <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
           <author>david-pellissier</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/"></description>
+          <link>https://yctf.ch/writeups/tryhackme/solar/</link>
+          <guid>https://yctf.ch/writeups/tryhackme/solar/</guid>
+          <description xml:base="https://yctf.ch/writeups/tryhackme/solar/"></description>
       </item>
       <item>
           <title>Defective RSA</title>
           <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
           <author>leonard-besseau</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/"></description>
+          <link>https://yctf.ch/writeups/buckeye/defective-rsa/</link>
+          <guid>https://yctf.ch/writeups/buckeye/defective-rsa/</guid>
+          <description xml:base="https://yctf.ch/writeups/buckeye/defective-rsa/"></description>
       </item>
       <item>
           <title>Elliptigo</title>
           <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
           <author>leonard-besseau</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/"></description>
+          <link>https://yctf.ch/writeups/buckeye/elliptigo/</link>
+          <guid>https://yctf.ch/writeups/buckeye/elliptigo/</guid>
+          <description xml:base="https://yctf.ch/writeups/buckeye/elliptigo/"></description>
       </item>
       <item>
           <title>Key Exchange</title>
           <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
           <author>leonard-besseau</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/"></description>
+          <link>https://yctf.ch/writeups/buckeye/key-exchange/</link>
+          <guid>https://yctf.ch/writeups/buckeye/key-exchange/</guid>
+          <description xml:base="https://yctf.ch/writeups/buckeye/key-exchange/"></description>
       </item>
       <item>
           <title>Keybase</title>
           <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
           <author>carcajou</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/crypto/keybase/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/crypto/keybase/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/keybase/"></description>
+          <link>https://yctf.ch/writeups/crypto/keybase/</link>
+          <guid>https://yctf.ch/writeups/crypto/keybase/</guid>
+          <description xml:base="https://yctf.ch/writeups/crypto/keybase/"></description>
       </item>
       <item>
           <title>Wolf</title>
           <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
           <author>leonard-besseau</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/crypto/wolf/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/crypto/wolf/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/wolf/"></description>
+          <link>https://yctf.ch/writeups/crypto/wolf/</link>
+          <guid>https://yctf.ch/writeups/crypto/wolf/</guid>
+          <description xml:base="https://yctf.ch/writeups/crypto/wolf/"></description>
       </item>
       <item>
           <title>Farm</title>
           <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
           <author>leonard-besseau</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/crypto/farm/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/crypto/farm/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/farm/"></description>
+          <link>https://yctf.ch/writeups/crypto/farm/</link>
+          <guid>https://yctf.ch/writeups/crypto/farm/</guid>
+          <description xml:base="https://yctf.ch/writeups/crypto/farm/"></description>
       </item>
       <item>
           <title>Baby</title>
           <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
           <author>carcajou</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/redpwn/baby/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/redpwn/baby/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/baby/"></description>
+          <link>https://yctf.ch/writeups/redpwn/baby/</link>
+          <guid>https://yctf.ch/writeups/redpwn/baby/</guid>
+          <description xml:base="https://yctf.ch/writeups/redpwn/baby/"></description>
       </item>
       <item>
           <title>Bread-making</title>
           <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
           <author>carcajou</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/"></description>
+          <link>https://yctf.ch/writeups/redpwn/bread-making/</link>
+          <guid>https://yctf.ch/writeups/redpwn/bread-making/</guid>
+          <description xml:base="https://yctf.ch/writeups/redpwn/bread-making/"></description>
       </item>
       <item>
           <title>ret2the-unknown-rop</title>
           <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
           <author>muristo</author>
-          <link>https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/</link>
-          <guid>https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/</guid>
-          <description xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/"></description>
+          <link>https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/</link>
+          <guid>https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/</guid>
+          <description xml:base="https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/"></description>
       </item>
     </channel>
 </rss>

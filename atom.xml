@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title></title>
-    <link rel="self" type="application/atom+xml" href="https://cestef.github.io/yctf.ch/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/"/>
+    <link rel="self" type="application/atom+xml" href="https://yctf.ch/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://yctf.ch/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2025-03-15T00:00:00+00:00</updated>
-    <id>https://cestef.github.io/yctf.ch/atom.xml</id>
+    <id>https://yctf.ch/atom.xml</id>
     <entry xml:lang="en">
         <title>FROSTies</title>
         <published>2025-03-15T00:00:00+00:00</published>
@@ -17,10 +17,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/insomnihack/frosties/"/>
+        <id>https://yctf.ch/writeups/insomnihack/frosties/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/insomnihack/frosties/">&lt;p&gt;We are able to eavesdrop on seamingly normal &lt;a href=&quot;https:&#x2F;&#x2F;cestef.github.io&#x2F;yctf.ch&#x2F;writeups&#x2F;insomnihack&#x2F;frosties&#x2F;#suggested-readings-and-references&quot;&gt;FROST&lt;&#x2F;a&gt; rounds&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/insomnihack/frosties/">&lt;p&gt;We are able to eavesdrop on seamingly normal &lt;a href=&quot;https:&#x2F;&#x2F;yctf.ch&#x2F;writeups&#x2F;insomnihack&#x2F;frosties&#x2F;#suggested-readings-and-references&quot;&gt;FROST&lt;&#x2F;a&gt; rounds&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;round-1&quot;&gt;Round 1&lt;&#x2F;h3&gt;
 &lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Participant 1 sent to participant 2 : VerifiableSecretSharingCommitment([...])
 &lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Participant 1 sent to participant 3 : VerifiableSecretSharingCommitment([...])
@@ -155,8 +155,8 @@ cstef&lt;br &#x2F;&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/"/>
+        <id>https://yctf.ch/writeups/huntress/baby-buffer-overflow-32bit/</id>
         
         <summary>Can you command this program to where it cannot go?
 To get the flag, you must somehow take control of its excecution.
@@ -174,8 +174,8 @@ Is it even possible?</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/backdoored-splunk-ii/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/backdoored-splunk-ii/"/>
+        <id>https://yctf.ch/writeups/huntress/backdoored-splunk-ii/</id>
         
         <summary>You&#x27;ve probably seen Splunk being used for good, but have you seen it used for evil?  
   
@@ -195,8 +195,8 @@ Is it even possible?</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/base-p/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/base-p/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/base-p/"/>
+        <id>https://yctf.ch/writeups/huntress/base-p/</id>
         
         <summary>That looks like a weird encoding, I wonder what it&#x27;s based on.
 
@@ -214,8 +214,8 @@ Download the file(s) below. </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/discount-programming-devices/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/discount-programming-devices/"/>
+        <id>https://yctf.ch/writeups/huntress/discount-programming-devices/</id>
         
         <summary>I used a tool on the internet to obfuscate my script!
 But I lost it, and I don&#x27;t know how to get it back.
@@ -233,8 +233,8 @@ Maybe you can help?</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/echo-chamber/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/echo-chamber/"/>
+        <id>https://yctf.ch/writeups/huntress/echo-chamber/</id>
         
         <summary>Is anyone there? Is anyone there? I&#x27;m sending myself the flag! I&#x27;m sending myself the flag! </summary>
         
@@ -262,8 +262,8 @@ Maybe you can help?</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/finder-s-fee/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/finder-s-fee/"/>
+        <id>https://yctf.ch/writeups/huntress/finder-s-fee/</id>
         
         <summary>You gotta make sure the people who find stuff for you are rewarded well!
 
@@ -287,8 +287,8 @@ ssh -p 30668 user@challenge.ctf.games</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme1/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/gocrackme1/"/>
+        <id>https://yctf.ch/writeups/huntress/gocrackme1/</id>
         
         <summary>TENNNNNN-HUT!
 
@@ -310,8 +310,8 @@ First up is the easiest of the three. Go get em! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/gocrackme3/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/gocrackme3/"/>
+        <id>https://yctf.ch/writeups/huntress/gocrackme3/</id>
         
         <summary>You&#x27;ve trained, you&#x27;ve failed, you&#x27;ve succeeded, you&#x27;ve learned. Everything you&#x27;ve done up to this point has prepared you for this moment. Don&#x27;t let me down, Gopher. Don&#x27;t let me down.</summary>
         
@@ -327,8 +327,8 @@ First up is the easiest of the three. Go get em! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/malibu/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/malibu/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/malibu/"/>
+        <id>https://yctf.ch/writeups/huntress/malibu/</id>
         
         <summary>What do you bring to the beach?</summary>
         
@@ -350,8 +350,8 @@ First up is the easiest of the three. Go get em! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/mimi/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/mimi/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/mimi/"/>
+        <id>https://yctf.ch/writeups/huntress/mimi/</id>
         
         <summary>Uh oh! Mimi forgot her password for her Windows laptop!
 
@@ -371,8 +371,8 @@ NOTE: Archive password is mimi</summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/mystery/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/mystery/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/mystery/"/>
+        <id>https://yctf.ch/writeups/huntress/mystery/</id>
         
         <summary>Someone sent this to me...
 such enigma, such mystery:
@@ -402,8 +402,8 @@ Settings as below:
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/no-need-for-brutus/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/no-need-for-brutus/"/>
+        <id>https://yctf.ch/writeups/huntress/no-need-for-brutus/</id>
         
         <summary>Author: @aenygma
 
@@ -427,8 +427,8 @@ Ex: If the deciphered text is &quot;hello world&quot;, the MD5 hash would be 5eb
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/oceanlocust/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/oceanlocust/"/>
+        <id>https://yctf.ch/writeups/huntress/oceanlocust/</id>
         
         <summary>Wow-ee zow-ee!! Some advanced persistent threats have been doing some tricks with hiding payloads in image files!
 
@@ -448,8 +448,8 @@ NOTE: this challenge includes a debug build of the binary used to craft the imag
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/pillowfight/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/pillowfight/"/>
+        <id>https://yctf.ch/writeups/huntress/pillowfight/</id>
         
         <summary>PillowFight uses _**advanced AI&#x2F;MLRegressionLearning**_ to combine two images of your choosing  
   
@@ -469,8 +469,8 @@ NOTE: this challenge includes a debug build of the binary used to craft the imag
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/plantopia/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/plantopia/"/>
+        <id>https://yctf.ch/writeups/huntress/plantopia/</id>
         
         <summary>Plantopia is our brand-new, cutting-edge plant care management website! Designed for hobbyists and professionals alike, it&#x27;s your one-stop shop for all plant care needs.  
   
@@ -493,8 +493,8 @@ Password: `testpassword`
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/ran-somewhere/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/ran-somewhere/"/>
+        <id>https://yctf.ch/writeups/huntress/ran-somewhere/</id>
         
         <summary>Thanks for joining the help desk! Here&#x27;s your first ticket of the day; can you help the client out?
 
@@ -512,8 +512,8 @@ NOTE, this challenge uses a non-standard flag format. Enter the human-readable n
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/russian-roulette/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/russian-roulette/"/>
+        <id>https://yctf.ch/writeups/huntress/russian-roulette/</id>
         
         <summary>My PowerShell has been acting really weird!! It takes a few seconds to start up, and sometimes it just crashes my computer!?!?! :(</summary>
         
@@ -529,8 +529,8 @@ NOTE, this challenge uses a non-standard flag format. Enter the human-readable n
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/rustline/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/rustline/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/rustline/"/>
+        <id>https://yctf.ch/writeups/huntress/rustline/</id>
         
         <summary>Jerry: A Redline Stealer.
 George: Written in Rust.
@@ -551,8 +551,8 @@ We caught a Redline variant executing on an endpoint and intercepted the encrypt
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/strange-calc/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/strange-calc/"/>
+        <id>https://yctf.ch/writeups/huntress/strange-calc/</id>
         
         <summary>I got this new calculator app from my friend! But it&#x27;s really weird, for some reason it needs admin permissions to run??</summary>
         
@@ -568,8 +568,8 @@ We caught a Redline variant executing on an endpoint and intercepted the encrypt
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/"/>
+        <id>https://yctf.ch/writeups/huntress/strive-marish-leadman-typecdr/</id>
         
         <summary>Looks like primo hex garbage.
 Maybe something went wrong?
@@ -599,8 +599,8 @@ Can you make sense of it? </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/system-code/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/system-code/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/system-code/"/>
+        <id>https://yctf.ch/writeups/huntress/system-code/</id>
         
         <summary>Follow the white rabbit.
 
@@ -626,8 +626,8 @@ Press the Start button on the top-right to begin this challenge. </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/the-void/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/the-void/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/the-void/"/>
+        <id>https://yctf.ch/writeups/huntress/the-void/</id>
         
         <summary>When you gaze long into the void, the void gazes also into you...</summary>
         
@@ -643,8 +643,8 @@ Press the Start button on the top-right to begin this challenge. </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/too-many-bits/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/too-many-bits/"/>
+        <id>https://yctf.ch/writeups/huntress/too-many-bits/</id>
         
         <summary>Author: @JohnHammond
 
@@ -664,8 +664,8 @@ What do all these ones and zero&#x27;s mean!?! We are in the Warmups category af
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/txt-message/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/txt-message/"/>
+        <id>https://yctf.ch/writeups/huntress/txt-message/</id>
         
         <summary>Hmmm, have you seen some of the strange DNS records for the ctf.games domain? One of them sure is odd... </summary>
         
@@ -681,8 +681,8 @@ What do all these ones and zero&#x27;s mean!?! We are in the Warmups category af
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/x-ray/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/x-ray/"/>
+        <id>https://yctf.ch/writeups/huntress/x-ray/</id>
         
         <summary>The SOC detected malware on a host, but antivirus already quarantined it... can you still make sense of what it does? </summary>
         
@@ -698,8 +698,8 @@ What do all these ones and zero&#x27;s mean!?! We are in the Warmups category af
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/huntress/y2j/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/huntress/y2j/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/huntress/y2j/"/>
+        <id>https://yctf.ch/writeups/huntress/y2j/</id>
         
         <summary>Everyone was so worried about Y2K, but apparently it was a typo all along!!
 
@@ -717,10 +717,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/black-alps/cake/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/black-alps/cake/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/black-alps/cake/"/>
+        <id>https://yctf.ch/writeups/black-alps/cake/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/black-alps/cake/">&lt;p&gt;I am the author of this challenge. This MD contains some information about the chall and a detailed explanation of how I expected players to solve it.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/black-alps/cake/">&lt;p&gt;I am the author of this challenge. This MD contains some information about the chall and a detailed explanation of how I expected players to solve it.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;challenge-design&quot;&gt;Challenge design&lt;&#x2F;h2&gt;
 &lt;p&gt;This challenge is run differently than the usual pwn challenges. Pwn challenges often consist of a program that reads and writes stuff to stdin&#x2F;stdout. The challenge server will wait for TCP connections and, for each TCP connection, it executes the program in a new process with stdin&#x2F;stdout connected to the client socket.&lt;&#x2F;p&gt;
 &lt;p&gt;This challenge is different. Here the program itself is the server. It waits for TCP connections in an infinite loop and, when a connection occurs, it forks itself and the child process is responsible for communicating with the client. We will see that this specific design increases the vulnerability of the server.&lt;&#x2F;p&gt;
@@ -855,10 +855,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/tryhackme/solar/"/>
+        <id>https://yctf.ch/writeups/tryhackme/solar/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/tryhackme/solar/">&lt;h2 id=&quot;writeup-de-la-room-solar&quot;&gt;Writeup de la room &quot;Solar&quot;&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/tryhackme/solar/">&lt;h2 id=&quot;writeup-de-la-room-solar&quot;&gt;Writeup de la room &quot;Solar&quot;&lt;&#x2F;h2&gt;
 &lt;p&gt;Lien: https:&#x2F;&#x2F;tryhackme.com&#x2F;room&#x2F;solar&lt;&#x2F;p&gt;
 &lt;p&gt;Docker: &lt;strong&gt;&lt;code&gt;sudo docker run -it --name &quot;Kali&quot; -p 1234:1234 -p 8000:8000 -p 1389:1389 kalilinux&#x2F;kali &#x2F;bin&#x2F;bash &lt;&#x2F;code&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Installer toutes les dépendances:&lt;&#x2F;p&gt;
@@ -918,10 +918,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/buckeye/defective-rsa/"/>
+        <id>https://yctf.ch/writeups/buckeye/defective-rsa/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/defective-rsa/">&lt;h2 id=&quot;buckeye-ctf-2021&quot;&gt;Buckeye CTF 2021&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/buckeye/defective-rsa/">&lt;h2 id=&quot;buckeye-ctf-2021&quot;&gt;Buckeye CTF 2021&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;code&gt;I use whatever exponent I want&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;We are given the file (chall.py).&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;python&quot; class=&quot;language-python z-code&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;z-source z-python&quot;&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-keyword z-control z-import z-from z-python&quot;&gt;from&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-meta z-import-source z-python&quot;&gt; &lt;span class=&quot;z-meta z-import-path z-python&quot;&gt;&lt;span class=&quot;z-meta z-import-name z-python&quot;&gt;Crypto&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-python&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-import-name z-python&quot;&gt;Util&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-python&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-import-name z-python&quot;&gt;number&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-keyword z-control z-import z-python&quot;&gt;import&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt; &lt;span class=&quot;z-meta z-generic-name z-python&quot;&gt;getPrime&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-import-list z-python&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-generic-name z-python&quot;&gt;inverse&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-import-list z-python&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-generic-name z-python&quot;&gt;bytes_to_long&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
@@ -979,10 +979,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/buckeye/elliptigo/"/>
+        <id>https://yctf.ch/writeups/buckeye/elliptigo/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/elliptigo/">&lt;h2 id=&quot;buckeyectf&quot;&gt;BuckeyeCTF&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/buckeye/elliptigo/">&lt;h2 id=&quot;buckeyectf&quot;&gt;BuckeyeCTF&lt;&#x2F;h2&gt;
 &lt;p&gt;We are given an implementation of the 25519 curve and are allowed to give a base point use to generate a private key for AES. Since we can choose the base point (The generator we should try to generate an anomalous curve).&lt;&#x2F;p&gt;
 &lt;p&gt;By looking &lt;a href=&quot;https:&#x2F;&#x2F;cr.yp.to&#x2F;ecdh.html#validate&quot;&gt;here&lt;&#x2F;a&gt;, we can see there already is some point that have a low order. We can take any and then we can decrypt the message with either (0, 1 the point or the other 5 possibilities).&lt;&#x2F;p&gt;
 &lt;p&gt;This gives us the flag &lt;code&gt;buckeye{p01nt5_0f_l0w_0rd3r}&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
@@ -1000,10 +1000,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/buckeye/key-exchange/"/>
+        <id>https://yctf.ch/writeups/buckeye/key-exchange/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/buckeye/key-exchange/"></content>
+        <content type="html" xml:base="https://yctf.ch/writeups/buckeye/key-exchange/"></content>
         
     </entry>
     <entry xml:lang="en">
@@ -1017,10 +1017,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/crypto/keybase/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/crypto/keybase/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/crypto/keybase/"/>
+        <id>https://yctf.ch/writeups/crypto/keybase/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/keybase/">&lt;p&gt;Ce challenge portait sur une attaque avec un Accès à un oracle de chiffrement sur AES-CBC.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/crypto/keybase/">&lt;p&gt;Ce challenge portait sur une attaque avec un Accès à un oracle de chiffrement sur AES-CBC.&lt;&#x2F;p&gt;
 &lt;p&gt;N&#x27;ayant pas réussi à résoudre ce challenge, vous trouverez en suivant le lien ci-dessous 2 writes-up avec la résolution complète : &lt;a href=&quot;https:&#x2F;&#x2F;ctftime.org&#x2F;task&#x2F;16740&quot;&gt;https:&#x2F;&#x2F;ctftime.org&#x2F;task&#x2F;16740&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Ci-dessous, voici un récapitulatif de la solution&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;presentation&quot;&gt;Présentation&lt;&#x2F;h2&gt;
@@ -1049,7 +1049,7 @@ The real world-ending fears were from Y2J! </summary>
 &lt;li&gt;En orange foncé, ce qu&#x27;on connait&lt;&#x2F;li&gt;
 &lt;li&gt;En clair, ce qu&#x27;on connait partiellement&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;cestef.github.io&#x2F;yctf.ch&#x2F;writeups&#x2F;crypto&#x2F;keybase&#x2F;cbc-aes-Page-3.png&quot; alt=&quot;cbc-aes-Page-3&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;yctf.ch&#x2F;writeups&#x2F;crypto&#x2F;keybase&#x2F;cbc-aes-Page-3.png&quot; alt=&quot;cbc-aes-Page-3&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -1064,10 +1064,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/crypto/wolf/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/crypto/wolf/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/crypto/wolf/"/>
+        <id>https://yctf.ch/writeups/crypto/wolf/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/wolf/">&lt;p&gt;&lt;strong&gt;Not solved during the CTF&lt;&#x2F;strong&gt; :(&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/crypto/wolf/">&lt;p&gt;&lt;strong&gt;Not solved during the CTF&lt;&#x2F;strong&gt; :(&lt;&#x2F;p&gt;
 &lt;p&gt;For this task we are given the source code and an encryption oracle.&lt;&#x2F;p&gt;
 &lt;p&gt;So we can see that the encryption use GCM and that the password is hard-coded. The message are encrypted with the following structure (HEADER|MESSAGE|PADDING)&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;2&#x2F;25&#x2F;GCM-Galois_Counter_Mode_with_IV.svg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
@@ -1099,10 +1099,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/crypto/farm/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/crypto/farm/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/crypto/farm/"/>
+        <id>https://yctf.ch/writeups/crypto/farm/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/crypto/farm/">&lt;h1 id=&quot;crypto-ctf-2021-writeup-challenge-farm&quot;&gt;Crypto CTF 2021 Writeup Challenge Farm&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/crypto/farm/">&lt;h1 id=&quot;crypto-ctf-2021-writeup-challenge-farm&quot;&gt;Crypto CTF 2021 Writeup Challenge Farm&lt;&#x2F;h1&gt;
 &lt;p&gt;For this task, we are given two file: the code and the encrypted flag.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;python&quot; class=&quot;language-python z-code&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;z-source z-python&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-python&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-python&quot;&gt;#&lt;&#x2F;span&gt;!&#x2F;usr&#x2F;bin&#x2F;env sage
 &lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-python&quot;&gt;
@@ -1194,10 +1194,10 @@ The real world-ending fears were from Y2J! </summary>
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/redpwn/baby/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/redpwn/baby/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/redpwn/baby/"/>
+        <id>https://yctf.ch/writeups/redpwn/baby/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/baby/">&lt;h1 id=&quot;baby&quot;&gt;Baby&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/redpwn/baby/">&lt;h1 id=&quot;baby&quot;&gt;Baby&lt;&#x2F;h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;n: 228430203128652625114739053365339856393&lt;&#x2F;p&gt;
 &lt;p&gt;e: 65537&lt;&#x2F;p&gt;
@@ -1236,10 +1236,10 @@ Puis on calcule la clé privée d en utilisant la fonction &lt;em&gt;inverse_mod
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/redpwn/bread-making/"/>
+        <id>https://yctf.ch/writeups/redpwn/bread-making/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/bread-making/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/redpwn/bread-making/">&lt;blockquote&gt;
 &lt;p&gt;My parents aren&#x27;t home! Quick, help me make some bread please...&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;Lien ctftime pour récupérer le fichier et voir d&#x27;autres writeup :&lt;&#x2F;p&gt;
@@ -1465,10 +1465,10 @@ Puis on calcule la clé privée d en utilisant la fonction &lt;em&gt;inverse_mod
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/"/>
-        <id>https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/</id>
+        <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/"/>
+        <id>https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/</id>
         
-        <content type="html" xml:base="https://cestef.github.io/yctf.ch/writeups/redpwn/ret2the-unknown-rop/"></content>
+        <content type="html" xml:base="https://yctf.ch/writeups/redpwn/ret2the-unknown-rop/"></content>
         
     </entry>
 </feed>
