@@ -1,4 +1,4 @@
-base_url = "https://cestef.github.io/yctf.ch/"
+base_url = "https://yctf.ch/"
 minify_html = true
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
