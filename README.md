@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="static/images/banner_light.png#gh-light-mode-only" alt="Logo" height="200">
-    <img src="static/images/banner_dark.png#gh-dark-mode-only" alt="Logo" height="200">
+    <img src="assets/banner-gray.png#gh-light-mode-only" alt="Logo" height="200">
+    <img src="assets/banner-white.png#gh-dark-mode-only" alt="Logo" height="200">
 </p>
 
 --- 
@@ -31,65 +31,23 @@ Mostly static pages like the home page, about page, etc. are stored in the `cont
 
 ### Writeups
 
-Writeups are stored in the `content/writeups/` directory. Each CTF has its own directory, and each challenge has its own directory within that. The `index.md` file contains the writeup, and any files associated with the challenge are stored in the `files/` directory.
+Writeups are stored in the `content/writeups/` directory as a **git submodule** pointing to the [writeups repository](https://github.com/y-ctf/writeups).
 
-#### Frontmatter
-
-The frontmatter of a writeup is in TOML format and looks like this:
-
-```toml
-+++
-title = "Challenge Name"
-date = 2021-01-01
-description = "Description of the challenge" # Optional
-authors = ["Author 1", "Author 2"] # Optional
-
-[taxonomies]
-categories = ["pwn"]
-+++
-```
-
-### Markdown
-
-The content is rendered using a fork of [Zola](https://github.com/cestef/zola). It supports the standard markdown syntax, as well as some custom stuff:
-
-- [`typst`](https://typst.app) math rendering
-
-```markdown
-$$
-lim_(x->oo) (1 + 1/x)^x = e
-$$
-```
-
-- Obsdian-like callouts
-
-```markdown
-> [!NOTE]
-> This is a note
-```
-
-- Code block injection
-
-~~~markdown
-```python include=files/solution.py
-```
-~~~
-
-- Copy button
-
-~~~markdown
-```python copy
-print("Hello, world!")
-```
-~~~
+For contributing writeups, formatting guidelines, and detailed documentation, see the [writeups repository README](https://github.com/y-ctf/writeups/blob/main/README.md).
 
 ## Development
 
-1. Clone the repository
+1. Clone the repository with submodules
 
 ```bash
-git clone https://github.com/yctf/site.git
-cd site
+git clone --recurse-submodules https://github.com/y-ctf/y-ctf.github.io.git
+cd y-ctf.github.io
+```
+
+Or if you've already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
 ```
 
 2. Install Zola ([`brew`](https://brew.sh) or [`cargo`](https://rustup.rs))
@@ -116,17 +74,42 @@ pnpm dev
 
 ## Importing Writeups from [CTFNote](https://note.yctf.ch)
 
-A python script is provided to import writeups from a specific past CTF. It will download the writeups and format them into the correct structure.
+A python script is provided to import writeups from a specific past CTF directly into the writeups submodule.
 
-### With [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
+<details open>
+<summary>With <a href="https://docs.astral.sh/uv/getting-started/installation/"><code>uv</code></a></summary>
+<p></p>
 
 ```bash
 uv run scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
 ```
 
-### With `python`
+</details>
+<details>
+<summary>With <code>python</code></summary>
+<p></p>
 
 ```bash
 pip install requests tomlkit rich python_slugify
 python scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
 ```
+
+</details>
+
+### After importing
+
+1. Commit and push changes in the writeups submodule:
+   ```bash
+   cd content/writeups
+   git add .
+   git commit -m "add writeups for <ctf-name>"
+   git push
+   ```
+
+2. Update the submodule reference in the main repository:
+   ```bash
+   cd ../..
+   git add content/writeups
+   git commit -m "update writeups submodule"
+   git push
+   ```
