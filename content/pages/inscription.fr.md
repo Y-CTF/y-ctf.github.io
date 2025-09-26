@@ -14,9 +14,3 @@ Rejoins-nous via ce formulaire qui te donnera ensuite accès au serveur Discord 
 </p>
 
 En cas de question, n’hésite pas à contacter le ou la [responsable des membres](mailto:y-ctf@heig-vd.ch).
-
-## Séance d’information
-
-Nous organisons une séance d'information sur le club et les futures activités à chaque début d'année académique. 
-
-~~La prochaine scéance aura lieu le jeudi 26 septembre 2024 à 12:15 dans la salle F01 à Cheseaux.~~
