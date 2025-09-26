@@ -202,10 +202,6 @@ points = {points}
 [FLAG_HERE]
 ```
 
-## Files
-
-[List any relevant files in the files/ directory]
-
 ## References
 
 - [Any references or links]
