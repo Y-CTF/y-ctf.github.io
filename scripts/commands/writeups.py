@@ -18,7 +18,7 @@ requests.packages.urllib3.disable_warnings(
 )
 
 from importers.ctf import CTFImporter
-from constants import WRITEUP_TEMPLATE, IMAGE_DOWNLOAD_HEADERS
+from constants import WRITEUP_TEMPLATE, CTF_INDEX_TEMPLATE, IMAGE_DOWNLOAD_HEADERS
 
 console = Console()
 
@@ -40,7 +40,8 @@ def create_writeup(ctf, challenge, category, author):
     """Create a new writeup template"""
     ctf_slug = slugify(ctf)
     challenge_slug = slugify(challenge)
-    writeup_dir = Path("content/writeups") / ctf_slug / challenge_slug
+    ctf_dir = Path("content/writeups") / ctf_slug
+    writeup_dir = ctf_dir / challenge_slug
 
     if writeup_dir.exists():
         console.print(
@@ -48,6 +49,15 @@ def create_writeup(ctf, challenge, category, author):
         )
         if not click.confirm("Continue anyway?"):
             return
+
+    ctf_dir.mkdir(parents=True, exist_ok=True)
+    ctf_index_file = ctf_dir / "_index.md"
+
+    if not ctf_index_file.exists():
+        ctf_index_content = CTF_INDEX_TEMPLATE.format(ctf=ctf)
+        with open(ctf_index_file, "w", encoding="utf-8") as f:
+            f.write(ctf_index_content)
+        console.print(f"[green]✓ Created CTF index file: {ctf_index_file}[/green]")
 
     writeup_dir.mkdir(parents=True, exist_ok=True)
     files_dir = writeup_dir / "files"

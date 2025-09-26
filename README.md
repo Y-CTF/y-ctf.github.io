@@ -35,7 +35,7 @@ Mostly static pages like the home page, about page, etc. are stored in the [`con
 
 Writeups are stored in the [`content/writeups/`](content/writeups) directory as a **git submodule** pointing to the [writeups repository](https://github.com/y-ctf/writeups).
 
-For contributing writeups, see the [writeups README](content/writeups/README.md).
+For contributing writeups, see the [writeups README](https://github.com/y-ctf/writeups).
 
 To quickly get started with a new writeup, you can use the CLI tool:
 

@@ -211,6 +211,14 @@ points = {points}
 - [Any references or links]
 """
 
+# CTF index template
+CTF_INDEX_TEMPLATE = """+++
+title = "{ctf}"
+transparent = true
+template = "ctf.html"
++++
+"""
+
 # HTTP headers for image downloading
 IMAGE_DOWNLOAD_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
