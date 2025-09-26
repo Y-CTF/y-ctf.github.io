@@ -56,7 +56,7 @@ main {
 }
 
 .prose {
-	@apply xl:max-w-[72ch];
+	@apply xl:max-w-[78ch];
 }
 
 details {

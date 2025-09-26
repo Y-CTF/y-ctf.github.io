@@ -11,167 +11,182 @@
     {% if events %}
     <div class="all-events mb-12">
         <h2 class="mb-8 text-2xl font-bold">{{ trans(key="upcoming_events", lang=lang) }}</h2>
+
+        <div class="event-selection-controls mb-6 p-4 bg-accent/10 border border-border/30">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <label class="flex items-center cursor-pointer justify-center">
+                        <input type="checkbox" id="select-all-events" class="sr-only">
+
+                        <div class="relative w-5 h-5 bg-background border-2 border-border transition-all duration-200 mr-4">
+                        </div>
+
+                        <span class="text-sm font-medium select-none">Select All Events</span>
+                    </label>
+                    <span class="text-sm text-muted-foreground select-none">
+                        (<span id="selected-count">0</span> selected)
+                    </span>
+                </div>
+
+                <button id="download-selected-ics"
+                        class="cursor-pointer bg-primary text-primary-foreground px-4 py-2 hover:bg-primary/90 transition-colors text-sm font-medium flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto mt-2 sm:mt-0"
+                        disabled>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                    </svg>
+                    Download Selected ICS
+                </button>
+            </div>
+        </div>
+
         <div class="grid gap-8">
             {% for event in events %}
             <div
-                class="event-card bg-gradient-to-br from-accent/30 to-accent/60 p-8 border border-border/50 hover:shadow-xl hover:border-border transition-all duration-300 backdrop-blur-sm">
-                <div class="flex flex-col lg:flex-row lg:items-start gap-6">
-                    <div class="event-content flex-grow">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
-                            <div class="flex items-center gap-3">
-                                <h3 class="text-2xl font-bold !m-0 text-foreground">
-                                    {% if lang == "fr" and event.title_fr %}
-                                    {{ event.title_fr }}
+                class="event-card relative bg-gradient-to-br from-accent/30 to-accent/60 border border-border/50 hover:shadow-xl hover:border-border transition-all duration-300 backdrop-blur-sm overflow-hidden">
+                <div class="absolute top-4 right-4 z-10">
+                    <label class="relative inline-flex items-center cursor-pointer group">
+                        <input type="checkbox" class="event-checkbox sr-only"
+                               data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else %}{{ event.title }}{% endif %}"
+                               data-event-start="{{ event.start_date }}"
+                               data-event-end="{{ event.end_date | default(value=event.start_date) }}"
+                               data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
+                               data-event-description="{% if lang == " fr" and event.description_fr %}{{ event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif %}">
+
+                        
+                        <div class="relative w-6 h-6 bg-background/80 backdrop-blur-sm border-2 border-border transition-all duration-200 group-hover:border-primary group-hover:bg-primary/10">
+                        </div>
+
+                        
+                        <div class="absolute inset-0 w-6 h-6 bg-primary/20 scale-0 transition-transform duration-200"></div>
+                    </label>
+                </div>
+
+                <div class="p-6 lg:p-8">
+                    <div class="flex flex-col lg:flex-row lg:items-start gap-6">
+                        
+                        <div class="event-content flex-grow">
+                            <div class="mb-6">
+                                <div class="flex flex-col gap-3 mb-4">
+                                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                                        <span class="event-type bg-primary text-primary-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+                                            {{ event.type | title }}
+                                        </span>
+                                        {% if event.recurring %}
+                                        <span class="bg-warning text-warning-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+                                            {{ trans(key="recurring", lang=lang) }}
+                                        </span>
+                                        {% endif %}
+                                    </div>
+
+                                    <h3 class="text-2xl lg:text-3xl font-bold !m-0 text-foreground pr-10">
+                                        {% if lang == "fr" and event.title_fr %}
+                                        {{ event.title_fr }}
+                                        {% else %}
+                                        {{ event.title }}
+                                        {% endif %}
+                                    </h3>
+                                <p class="text-muted-foreground mb-6 text-base leading-relaxed">
+                                    {% if lang == "fr" and event.description_fr %}
+                                    {{ event.description_fr }}
                                     {% else %}
-                                    {{ event.title }}
+                                    {{ event.description }}
                                     {% endif %}
-                                </h3>
+                                </p>
                             </div>
-                            <div class="flex gap-2">
-                                <span
-                                    class="event-type bg-primary text-primary-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wide">
-                                    {{ event.type | title }}
-                                </span>
-                                {% if event.recurring %}
-                                <span
-                                    class="bg-warning text-warning-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wide">
-                                    {{ trans(key="recurring", lang=lang) }}
-                                </span>
+                            
+                            <div class="event-details grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                                <div class="flex items-center gap-4 p-4 bg-background/50 border border-border/30">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow">
+                                        <div class="font-semibold text-foreground mb-1">
+                                            {{ event.start_date | date(format="%B %d, %Y") }}
+                                        </div>
+                                        <div class="text-muted-foreground text-sm">
+                                            {{ event.start_date | date(format="%H:%M") }}
+                                            {% if event.end_date %}
+                                            {% set start_day = event.start_date | date(format="%Y-%m-%d") %}
+                                            {% set end_day = event.end_date | date(format="%Y-%m-%d") %}
+                                            {% if start_day != end_day %}
+                                            - {{ event.end_date | date(format="%B %d, %H:%M") }}
+                                            {% else %}
+                                            - {{ event.end_date | date(format="%H:%M") }}
+                                            {% endif %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% if event.location %}              
+                                <div class="flex items-center gap-4 p-4 bg-background/50  border border-border/30">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-success/10 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow">
+                                        <div class="font-semibold text-foreground mb-1">Location</div>
+                                        <div class="text-muted-foreground text-sm">
+                                            {% if lang == "fr" and event.location_fr %}
+                                            {{ event.location_fr }}
+                                            {% else %}
+                                            {{ event.location }}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+
+                                {% if event.registration_deadline %} 
+                                <div class="flex items-center gap-4 p-4 bg-background/50 border border-border/30 md:col-span-2">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow">
+                                        <div class="font-semibold text-foreground mb-1">{{ trans(key="registration_deadline", lang=lang) }}</div>
+                                        <div class="text-muted-foreground text-sm">{{ event.registration_deadline | date(format="%B %d, %Y") }}</div>
+                                    </div>
+                                </div>
                                 {% endif %}
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-6 text-base leading-relaxed">
-                            {% if lang == "fr" and event.description_fr %}
-                            {{ event.description_fr }}
-                            {% else %}
-                            {{ event.description }}
-                            {% endif %}
-                        </p>
-
-                        <div class="event-details grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                            <div class="flex items-center gap-3 p-3 bg-background/50 ">
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                                        </path>
+                        <div class="event-actions mt-4 lg:mt-0 pt-4 lg:pt-0 border-t lg:border-t-0 border-border/20">
+                            <div class="flex flex-col gap-2">
+                                <button
+                                    class="cursor-pointer google-calendar bg-primary text-primary-foreground px-4 py-2 hover:bg-primary/80 transition-colors text-sm font-medium flex items-center justify-center gap-2"
+                                    data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else %}{{ event.title }}{% endif %}"
+                                    data-event-start="{{ event.start_date }}"
+                                    data-event-end="{{ event.end_date | default(value=event.start_date) }}"
+                                    data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
+                                    data-event-description="{% if lang == " fr" and event.description_fr %}{{ event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif %}">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z" />
                                     </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-foreground">
-                                        {{ event.start_date | date(format="%B %d, %Y") }}
-                                    </div>
-                                    <div class="text-muted-foreground">
-                                        {{ event.start_date | date(format="%H:%M") }}
-                                        {% if event.end_date %}
-                                        {% set start_day = event.start_date | date(format="%Y-%m-%d") %}
-                                        {% set end_day = event.end_date | date(format="%Y-%m-%d") %}
-                                        {% if start_day != end_day %}
-                                        - {{ event.end_date | date(format="%B %d, %H:%M") }}
-                                        {% else %}
-                                        - {{ event.end_date | date(format="%H:%M") }}
-                                        {% endif %}
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-
-                            {% if event.location %}
-                            <div class="flex items-center gap-3 p-3 bg-background/50 ">
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 bg-success/10 rounded-full flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                        </path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    Add to Google Calendar
+                                </button>
+                                {% if event.url %}
+                                <a href="{{ event.url }}" target="_blank" rel="noopener noreferrer"
+                                    class="bg-secondary text-secondary-foreground px-4 py-2 hover:bg-secondary/60 transition-colors text-sm font-medium no-underline flex items-center justify-center gap-2 border border-border/20">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                                     </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-foreground">Location</div>
-                                    <div class="text-muted-foreground">
-                                        {% if lang == "fr" and event.location_fr %}
-                                        {{ event.location_fr }}
-                                        {% else %}
-                                        {{ event.location }}
-                                        {% endif %}
-                                    </div>
-                                </div>
+                                    {{ trans(key="learn_more", lang=lang) }}
+                                </a>
+                                {% endif %}
                             </div>
-                            {% endif %}
-
-                            {% if event.registration_deadline %}
-                            <div class="flex items-center gap-3 p-3 bg-background/50  md:col-span-2">
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 bg-destructive/10 rounded-full flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-destructive" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-foreground">{{ trans(key="registration_deadline",
-                                        lang=lang) }}</div>
-                                    <div class="text-muted-foreground">{{ event.registration_deadline | date(format="%B
-                                        %d, %Y") }}</div>
-                                </div>
-                            </div>
-                            {% endif %}
                         </div>
                     </div>
-
-                    <div class="event-actions flex flex-col gap-3 md:flex-shrink-0 min-w-[180px]">
-                        <div class="calendar-buttons flex flex-col gap-2">
-                            <button
-                                class="google-calendar cursor-pointer bg-primary text-primary-foreground px-4 py-2  hover:bg-primary/80 transition-colors text-sm font-medium flex items-center justify-center gap-2"
-                                data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else
-                                %}{{ event.title }}{% endif %}" data-event-start="{{ event.start_date }}"
-                                data-event-end="{{ event.end_date | default(value=event.start_date) }}"
-                                data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr
-                                }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
-                                data-event-description="{% if lang == " fr" and event.description_fr %}{{
-                                event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif
-                                %}">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z" />
-                                </svg>
-                                Google Calendar
-                            </button>
-
-                            <button
-                                class="download-ics cursor-pointer bg-secondary text-secondary-foreground px-4 py-2  hover:bg-secondary/80 transition-colors text-sm font-medium flex items-center justify-center gap-2"
-                                data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else
-                                %}{{ event.title }}{% endif %}" data-event-start="{{ event.start_date }}"
-                                data-event-end="{{ event.end_date | default(value=event.start_date) }}"
-                                data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr
-                                }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
-                                data-event-description="{% if lang == " fr" and event.description_fr %}{{
-                                event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif
-                                %}">
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-                                </svg>
-                                {{ trans(key="download_ics", lang=lang) }}
-                            </button>
-                        </div>
-
-                        {% if event.url %}
-                        <a href="{{ event.url }}" target="_blank" rel="noopener noreferrer"
-                            class="bg-secondary text-secondary-foreground px-4 py-2  hover:bg-secondary/80 transition-colors text-sm font-medium text-center no-underline flex items-center justify-center gap-2">
-                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
-                            </svg>
-                            {{ trans(key="learn_more", lang=lang) }}
-                        </a>
-                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -183,68 +198,6 @@
     {% endif %}
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const formatDate = (date) => {
-            return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-        };
-
-        const createIcsContent = (title, start, end, location, description) => {
-            return [
-                'BEGIN:VCALENDAR',
-                'VERSION:2.0',
-                'PRODID:-//Y-CTF//Events//EN',
-                'BEGIN:VEVENT',
-                `UID:${Date.now()}@yctf.ch`,
-                `DTSTAMP:${formatDate(new Date())}`,
-                `DTSTART:${formatDate(start)}`,
-                `DTEND:${formatDate(end)}`,
-                `SUMMARY:${title}`,
-                `DESCRIPTION:${description}`,
-                `LOCATION:${location}`,
-                'END:VEVENT',
-                'END:VCALENDAR'
-            ].join('\r\n');
-        };
-
-        const googleCalendarButtons = document.querySelectorAll('.google-calendar');
-        googleCalendarButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const title = this.dataset.eventTitle;
-                const start = new Date(this.dataset.eventStart);
-                const end = new Date(this.dataset.eventEnd);
-                const location = this.dataset.eventLocation;
-                const description = this.dataset.eventDescription;
-
-                const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${formatDate(start)}/${formatDate(end)}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}`;
-
-                window.open(googleCalendarUrl, '_blank');
-            });
-        });
-
-        const downloadIcsButtons = document.querySelectorAll('.download-ics');
-        downloadIcsButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const title = this.dataset.eventTitle;
-                const start = new Date(this.dataset.eventStart);
-                const end = new Date(this.dataset.eventEnd);
-                const location = this.dataset.eventLocation;
-                const description = this.dataset.eventDescription;
-
-                const icsContent = createIcsContent(title, start, end, location, description);
-
-                const blob = new Blob([icsContent], { type: 'text/calendar' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.ics`;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            });
-        });
-    });
-</script>
+<script src="{{ get_url(path="js/events.js") }}" defer></script>
 
 {% endblock article %}
