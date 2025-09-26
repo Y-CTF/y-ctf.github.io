@@ -48,7 +48,7 @@
                     {{ page.date | date(format="%Y-%m-%d") }}
                 </span>
                 {% set tax =  page.taxonomies.categories | first %}
-                <a href="/{{ tax }}"
+                <a href="/categories/{{ tax }}"
                     class="bg-accent text-accent-foreground px-2 py-1 rounded-md text-sm w-fit font-bold no-underline">
                     {{ tax }}
                 </a>
