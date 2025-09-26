@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
         selectAllCheckbox: document.getElementById('select-all-events'),
         selectedCountSpan: document.getElementById('selected-count'),
         downloadBtn: document.getElementById('download-selected-ics'),
-        googleCalendarButtons: document.querySelectorAll('.google-calendar')
+        googleCalendarButtons: document.querySelectorAll('.google-calendar'),
+        showUpcomingBtn: document.getElementById('show-upcoming'),
+        showPastBtn: document.getElementById('show-past'),
+        showAllBtn: document.getElementById('show-all'),
+        eventCards: document.querySelectorAll('.event-card')
     };
 
     const UTILS = {
@@ -25,6 +29,49 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: checkbox.dataset.eventLocation,
                 description: checkbox.dataset.eventDescription
             }));
+        },
+
+        isPastEvent: (dateString) => {
+            try {
+                const eventDate = new Date(dateString);
+                const now = new Date();
+                return eventDate < now;
+            } catch {
+                return false;
+            }
+        },
+
+        updateEventStatuses: () => {
+            ELEMENTS.eventCards.forEach(card => {
+                const startDate = card.dataset.eventStart;
+                const isPast = UTILS.isPastEvent(startDate);
+                card.dataset.eventStatus = isPast ? 'past' : 'upcoming';
+
+                if (isPast) {
+                    card.classList.add('past-event');
+                    card.classList.remove('upcoming-event');
+                } else {
+                    card.classList.add('upcoming-event');
+                    card.classList.remove('past-event');
+                }
+            });
+        },
+
+        filterEvents: (filter) => {
+            ELEMENTS.eventCards.forEach(card => {
+                const status = card.dataset.eventStatus;
+                const shouldShow = filter === 'all' || status === filter;
+                card.style.display = shouldShow ? 'block' : 'none';
+            });
+        },
+
+        setActiveButton: (activeBtn) => {
+            [ELEMENTS.showUpcomingBtn, ELEMENTS.showPastBtn, ELEMENTS.showAllBtn].forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-primary-foreground');
+                btn.classList.add('bg-secondary', 'text-secondary-foreground');
+            });
+            activeBtn.classList.add('active', 'bg-primary', 'text-primary-foreground');
+            activeBtn.classList.remove('bg-secondary', 'text-secondary-foreground');
         }
     };
 
@@ -157,6 +204,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const bindEvents = () => {
+        ELEMENTS.showUpcomingBtn?.addEventListener('click', () => {
+            UTILS.setActiveButton(ELEMENTS.showUpcomingBtn);
+            UTILS.filterEvents('upcoming');
+        });
+
+        ELEMENTS.showPastBtn?.addEventListener('click', () => {
+            UTILS.setActiveButton(ELEMENTS.showPastBtn);
+            UTILS.filterEvents('past');
+        });
+
+        ELEMENTS.showAllBtn?.addEventListener('click', () => {
+            UTILS.setActiveButton(ELEMENTS.showAllBtn);
+            UTILS.filterEvents('all');
+        });
+
         for (const checkbox of ELEMENTS.eventCheckboxes) {
             checkbox.addEventListener('change', () => {
                 updateCheckboxVisual(checkbox);
@@ -179,4 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ELEMENTS.eventCheckboxes.forEach(updateCheckboxVisual);
     updateSelectAllVisual();
     updateSelectionState();
+
+    UTILS.updateEventStatuses();
+    UTILS.filterEvents('upcoming');
 });
