@@ -46,11 +46,11 @@
                 <div class="absolute top-4 right-4 z-10">
                     <label class="relative inline-flex items-center cursor-pointer group">
                         <input type="checkbox" class="event-checkbox sr-only"
-                               data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else %}{{ event.title }}{% endif %}"
+                               data-event-title="{% if lang == " fr" and event.title.fr %}{{ event.title.fr }}{% else %}{{ event.title.en }}{% endif %}"
                                data-event-start="{{ event.start_date }}"
                                data-event-end="{{ event.end_date | default(value=event.start_date) }}"
-                               data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
-                               data-event-description="{% if lang == " fr" and event.description_fr %}{{ event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif %}">
+                               data-event-location="{% if lang == " fr" and event.location.fr %}{{ event.location.fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
+                               data-event-description="{% if lang == " fr" and event.description.fr %}{{ event.description.fr }}{% else %}{{ event.description.en | default(value='' ) }}{% endif %}">
 
                         
                         <div class="relative w-6 h-6 bg-background/80 backdrop-blur-sm border-2 border-border transition-all duration-200 group-hover:border-primary group-hover:bg-primary/10">
@@ -79,17 +79,17 @@
                                     </div>
 
                                     <h3 class="text-2xl lg:text-3xl font-bold !m-0 text-foreground pr-10">
-                                        {% if lang == "fr" and event.title_fr %}
-                                        {{ event.title_fr }}
+                                        {% if lang == "fr" and event.title.fr %}
+                                        {{ event.title.fr }}
                                         {% else %}
-                                        {{ event.title }}
+                                        {{ event.title.en }}
                                         {% endif %}
                                     </h3>
                                 <p class="text-muted-foreground mb-6 text-base leading-relaxed">
-                                    {% if lang == "fr" and event.description_fr %}
-                                    {{ event.description_fr }}
+                                    {% if lang == "fr" and event.description.fr %}
+                                    {{ event.description.fr }}
                                     {% else %}
-                                    {{ event.description }}
+                                    {{ event.description.en }}
                                     {% endif %}
                                 </p>
                             </div>
@@ -135,8 +135,8 @@
                                     <div class="flex-grow">
                                         <div class="font-semibold text-foreground mb-1">Location</div>
                                         <div class="text-muted-foreground text-sm">
-                                            {% if lang == "fr" and event.location_fr %}
-                                            {{ event.location_fr }}
+                                            {% if lang == "fr" and event.location.fr %}
+                                            {{ event.location.fr }}
                                             {% else %}
                                             {{ event.location }}
                                             {% endif %}
@@ -165,11 +165,11 @@
                             <div class="flex flex-col gap-2">
                                 <button
                                     class="cursor-pointer google-calendar bg-primary text-primary-foreground px-4 py-2 hover:bg-primary/80 transition-colors text-sm font-medium flex items-center justify-center gap-2"
-                                    data-event-title="{% if lang == " fr" and event.title_fr %}{{ event.title_fr }}{% else %}{{ event.title }}{% endif %}"
+                                    data-event-title="{% if lang == " fr" and event.title.fr %}{{ event.title.fr }}{% else %}{{ event.title.en }}{% endif %}"
                                     data-event-start="{{ event.start_date }}"
                                     data-event-end="{{ event.end_date | default(value=event.start_date) }}"
-                                    data-event-location="{% if lang == " fr" and event.location_fr %}{{ event.location_fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
-                                    data-event-description="{% if lang == " fr" and event.description_fr %}{{ event.description_fr }}{% else %}{{ event.description | default(value='' ) }}{% endif %}">
+                                    data-event-location="{% if lang == " fr" and event.location.fr %}{{ event.location.fr }}{% else %}{{ event.location | default(value='' ) }}{% endif %}"
+                                    data-event-description="{% if lang == " fr" and event.description.fr %}{{ event.description.fr }}{% else %}{{ event.description.en | default(value='' ) }}{% endif %}">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M19,3H18V1H16V3H8V1H6V3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z" />
                                     </svg>

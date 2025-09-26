@@ -3,3 +3,4 @@ static/css/
 public/
 preview/
 auth.token
+__pycache__/

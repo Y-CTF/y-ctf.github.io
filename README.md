@@ -35,6 +35,26 @@ Writeups are stored in the `content/writeups/` directory as a **git submodule** 
 
 For contributing writeups, formatting guidelines, and detailed documentation, see the [writeups repository README](https://github.com/y-ctf/writeups/blob/main/README.md).
 
+### Events
+
+Events are stored in the `content/data/events.toml` file and displayed on the events page at `content/pages/events.md`.
+
+Example event entry:
+
+```toml
+[[events]]
+title = { en = "Event title in English", fr = "Titre de l'event en français" }
+description = { en = "Brief description of the event", fr = "Description brève de l'event" }
+start_date = "2025-10-15T18:00:00+01:00"             # ISO 8601 format
+end_date = "2025-10-15T20:00:00+01:00"               # ISO 8601 format
+location = "Physical/Virtual location"
+type = "competition"                                 # competition, meeting, conference, training, etc.
+url = "https://example.com"                          # Optional external link, shown as "learn more"
+registration_deadline = "2025-10-14T23:59:59+01:00"  # Optional deadline
+```
+
+Events are automatically imported from ICS calendar files using the import script (see the "Importing Events from ICS Calendar" section below).
+
 ## Development
 
 1. Clone the repository with submodules
@@ -81,7 +101,7 @@ A python script is provided to import writeups from a specific past CTF directly
 <p></p>
 
 ```bash
-uv run scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
+uv run scripts/import.py ctf -c "<ctf-name>" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
 ```
 
 </details>
@@ -91,7 +111,7 @@ uv run scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/
 
 ```bash
 pip install requests tomlkit rich python_slugify
-python scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
+python scripts/import.py ctf -c "<ctf-name>" -a "Bearer <token>" -o "content/writeups/<ctf-name>"
 ```
 
 </details>
@@ -113,3 +133,46 @@ python scripts/import.py -c "ctf-name" -a "Bearer <token>" -o "content/writeups/
    git commit -m "update writeups submodule"
    git push
    ```
+
+## Importing Events from ICS Calendar
+
+The same python script can also be used to import events from an ICS calendar file or URL and add them to the [`events.toml`](content/data/events.toml) file.
+
+To import events directly from CTFNote, you'll need the ICS URL and the iCalendar secret key.
+
+<details>
+<summary>How to retrieve the iCalendar URL</summary>
+<p></p>
+
+![](assets/icalendar-ics.png)
+
+</details>
+
+<details open>
+<summary>With <a href="https://docs.astral.sh/uv/getting-started/installation/"><code>uv</code></a></summary>
+<p></p>
+
+```bash
+# from a local ICS file
+uv run scripts/import.py ics -i "path/to/calendar.ics"
+
+# from an URL
+uv run scripts/import.py ics -i "https://yctf.ch/calendar.ics?key=<CALENDAR_KEY>" --event-type "competition"
+```
+
+</details>
+<details>
+<summary>With <code>python</code></summary>
+<p></p>
+
+```bash
+pip install requests tomlkit rich icalendar
+
+# from a local ICS file
+python scripts/import.py ics -i "path/to/calendar.ics"
+
+# from a URL
+python scripts/import.py ics -i "https://yctf.ch/calendar.ics?key=<CALENDAR_KEY>" --event-type "competition"
+```
+
+</details>

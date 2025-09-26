@@ -1,17 +1,14 @@
 [[events]]
-title = "Information Session"
-title_fr = "Séance d’information"
-description = "Information session about the club and its activities"
-description_fr = "Séance d’information/présentation sur le club et ses activités"
+title = { en = "Information Session", fr = "Séance d'information" }
+description = { en = "Information session about the club and its activities", fr = "Séance d'information/présentation sur le club et ses activités" }
 start_date = "2025-10-02T12:00:00+01:00"
 end_date = "2025-10-02T12:30:00+01:00"
 location = "HEIG-VD, TBD"
 type = "meeting"
 
 [[events]]
-title = "Black Alps CTF 2025"
-description = "Cybersecurity conference with CTF challenges"
-description_fr = "Conférence cybersécurité avec son CTF"
+title = { en = "Black Alps CTF 2025", fr = "Black Alps CTF 2025" }
+description = { en = "Cybersecurity conference with CTF challenges", fr = "Conférence cybersécurité avec son CTF" }
 start_date = "2025-11-21T18:45:00+01:00"
 end_date = "2025-11-22T00:00:00+01:00"
 location = "Yverdon-les-Bains"
