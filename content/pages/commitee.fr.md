@@ -5,14 +5,20 @@ path = "fr/commitee"
 
 Notre comité est formé d’étudiants bénévoles et d’un assistant (depuis Septembre 2024).
 
-## Actuel (2024-2025)
+## Actuel (2025-2026)
 
+- Aubry Mangold, **Président**
+- Colin Stefani, **Vice-Président et responsable communication**
+- Fabrice Chapuis, **Trésorier**
+- Nils Donatantonio, **Responsable membres, infrastructure et matériel**
+
+---
+
+### Comité 2024-2025
 - Felix Breval, **Président**
 - Aubry Mangold, **Vice-Président**
 - Alexandre Shyshmarov, **Trésorier et responsable de la communication**
 - Grégoire Rista, **Responsable des membres, infrastructure et matériel**
-
----
 
 ### Comité 2023-2024
 - Anthony David, **Président**

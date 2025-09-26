@@ -5,14 +5,20 @@ path = "committee"
 
 Our committee is composed of volunteer students and an assistant (since September 2024).
 
-## Current (2024-2025)
+## Current (2025-2026)
 
+- Aubry Mangold, **President**
+- Colin Stefani, **Vice President and Communication Manager**
+- Fabrice Chapuis, **Treasurer**
+- Nils Donatantonio, **Member, Infrastructure, and Equipment Manager**
+
+---
+
+### Committee 2024-2025
 - Felix Breval, **President**
 - Aubry Mangold, **Vice President**
 - Alexandre Shyshmarov, **Treasurer and Communication Manager**
 - Grégoire Rista, **Member, Infrastructure, and Equipment Manager**
-
----
 
 ### Committee 2023-2024
 - Anthony David, **President**
