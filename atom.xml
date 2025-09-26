@@ -20,7 +20,7 @@
         <link rel="alternate" type="text/html" href="https://yctf.ch/writeups/insomnihack/frosties/"/>
         <id>https://yctf.ch/writeups/insomnihack/frosties/</id>
         
-        <content type="html" xml:base="https://yctf.ch/writeups/insomnihack/frosties/">&lt;p&gt;We are able to eavesdrop on seamingly normal &lt;a href=&quot;https:&#x2F;&#x2F;yctf.ch&#x2F;writeups&#x2F;insomnihack&#x2F;frosties&#x2F;#suggested-readings-and-references&quot;&gt;FROST&lt;&#x2F;a&gt; rounds&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yctf.ch/writeups/insomnihack/frosties/">&lt;p&gt;We are able to eavesdrop on seemingly normal &lt;a href=&quot;https:&#x2F;&#x2F;yctf.ch&#x2F;writeups&#x2F;insomnihack&#x2F;frosties&#x2F;#suggested-readings-and-references&quot;&gt;FROST&lt;&#x2F;a&gt; rounds&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;round-1&quot;&gt;Round 1&lt;&#x2F;h3&gt;
 &lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Participant 1 sent to participant 2 : VerifiableSecretSharingCommitment([...])
 &lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Participant 1 sent to participant 3 : VerifiableSecretSharingCommitment([...])
