@@ -5,12 +5,25 @@
 
 {{ page.content | safe }}
 
-<div class="events-container mt-8">
+<div class="events-container mt-12">
     {% set events_data = load_data(path="content/data/events.toml") %}
     {% set events = events_data.events %}
     {% if events %}
     <div class="all-events mb-12">
-        <h2 class="mb-8 text-2xl font-bold">{{ trans(key="upcoming_events", lang=lang) }}</h2>
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold !my-0">{{ trans(key="events", lang=lang, default="Events") }}</h2>
+            <div class="flex gap-2">
+                <button id="show-upcoming" class="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium transition-colors active">
+                    {{ trans(key="upcoming", lang=lang, default="Upcoming") }}
+                </button>
+                <button id="show-past" class="px-4 py-2 bg-secondary text-secondary-foreground text-sm font-medium transition-colors">
+                    {{ trans(key="past", lang=lang, default="Past") }}
+                </button>
+                <button id="show-all" class="px-4 py-2 bg-secondary text-secondary-foreground text-sm font-medium transition-colors">
+                    {{ trans(key="all", lang=lang, default="All") }}
+                </button>
+            </div>
+        </div>
 
         <div class="event-selection-controls mb-6 p-4 bg-accent/10 border border-border/30">
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center justify-between">
@@ -42,7 +55,9 @@
         <div class="grid gap-8">
             {% for event in events %}
             <div
-                class="event-card relative bg-gradient-to-br from-accent/30 to-accent/60 border border-border/50 hover:shadow-xl hover:border-border transition-all duration-300 backdrop-blur-sm overflow-hidden">
+                class="event-card relative bg-gradient-to-br from-accent/30 to-accent/60 border border-border/50 hover:shadow-xl hover:border-border transition-all duration-300 backdrop-blur-sm overflow-hidden"
+                data-event-start="{{ event.start_date }}"
+                data-event-status="upcoming">
                 <div class="absolute top-4 right-4 z-10">
                     <label class="relative inline-flex items-center cursor-pointer group">
                         <input type="checkbox" class="event-checkbox sr-only"

@@ -49,6 +49,9 @@ registration_deadline = "Date limite d'inscription"
 recurring = "Récurrent"
 no_upcoming_events = "Aucun événement à venir"
 no_events = "Aucun événement"
+upcoming = "À venir"
+past = "Passés"
+all = "Tous"
 
 [translations]
 hero = "We are a non-profit student association born in 2020 at HEIG-VD, Switzerland."
@@ -70,6 +73,8 @@ registration_deadline = "Registration Deadline"
 recurring = "Recurring"
 no_upcoming_events = "No upcoming events"
 no_events = "No events"
-
+upcoming = "Upcoming"
+past = "Past"
+all = "All"
 [extra]
 repository = "https://github.com/y-ctf/y-ctf.github.io"

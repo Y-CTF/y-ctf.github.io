@@ -159,3 +159,20 @@ input {
 .invert-colors:hover {
 	filter: none;
 }
+
+/* Event filtering styles */
+.event-card.past-event {
+	@apply opacity-60 bg-gradient-to-br from-muted/20 to-muted/40 border-muted/30;
+}
+
+.event-card.past-event:hover {
+	@apply opacity-80;
+}
+
+.event-card[data-event-status="past"] .event-type {
+	@apply bg-muted text-muted-foreground;
+}
+
+button.active {
+	@apply bg-primary text-primary-foreground;
+}
