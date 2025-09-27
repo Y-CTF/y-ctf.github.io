@@ -58,7 +58,7 @@
                 class="event-card relative bg-gradient-to-br from-accent/30 to-accent/60 border border-border/50 hover:shadow-xl hover:border-border transition-all duration-300 backdrop-blur-sm overflow-hidden"
                 data-event-start="{{ event.start_date }}"
                 data-event-status="upcoming">
-                <div class="absolute top-4 right-4 z-10">
+                <div class="absolute top-4 right-4">
                     <label class="relative inline-flex items-center cursor-pointer group">
                         <input type="checkbox" class="event-checkbox sr-only"
                                data-event-title="{% if lang == " fr" and event.title.fr %}{{ event.title.fr }}{% else %}{{ event.title.en }}{% endif %}"
