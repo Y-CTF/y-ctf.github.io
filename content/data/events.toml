@@ -1,9 +1,9 @@
 [[events]]
 title = { en = "Information Session", fr = "Séance d'information" }
 description = { en = "Information session about the club and its activities", fr = "Séance d'information/présentation sur le club et ses activités" }
-start_date = "2025-10-02T12:00:00+01:00"
+start_date = "2025-10-02T12:10:00+01:00"
 end_date = "2025-10-02T12:30:00+01:00"
-location = "HEIG-VD, TBD"
+location = "HEIG-VD, G03"
 type = "meeting"
 
 [[events]]
