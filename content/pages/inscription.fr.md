@@ -7,10 +7,10 @@ Tous les **étudiants et diplômés de la HEIG-VD** sont admis dans le club CTF.
 
 L’inscription est annuelle, sans engagement de participation aux activités et il n’y a pas de cotisation à payer.
 
-Rejoins-nous via ce formulaire qui te donnera ensuite accès au serveur Discord et au groupe Telegram du club:
+Rejoins-nous sur Discord via ce lien, qui te donnera aussi accès au groupe Telegram du club :
 
 <p align="center">
-<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3DWtiLpi9OEljdBpNflYOw4kBDGMT1cAW-Gn4Feg8isLUA/viewform?usp=sf_link" class="btn btn-primary"><b>docs.google.com</b></a>
-</p>
+<iframe src="https://discord.com/widget?id=684847188110606381&theme=dark" width="500" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</p> 
 
 En cas de question, n’hésite pas à contacter le ou la [responsable des membres](mailto:y-ctf@heig-vd.ch).
