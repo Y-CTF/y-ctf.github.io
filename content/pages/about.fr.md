@@ -3,7 +3,7 @@ title = "À propos de nous"
 path = "fr/about"
 +++
 
-Le club Y-CTF est une association étudiante à but non lucratif créée en 2020 au sein de la HEIG-VD.
+Le club Y-CTF est une association étudiante à but non lucratif créée en 2019 au sein de la HEIG-VD.
 
 Son objectif est de promouvoir et introduire la sécurité informatique aux étudiants et étudiantes de l’école.
 

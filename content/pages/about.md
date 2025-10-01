@@ -3,7 +3,7 @@ title = "About us"
 path = "about"
 +++
 
-The Y-CTF club is a nonprofit student association founded in 2020 at HEIG-VD.  
+The Y-CTF club is a nonprofit student association founded in 2019 at HEIG-VD.  
 
 Its goal is to promote and introduce cybersecurity to the school's students.  
 
