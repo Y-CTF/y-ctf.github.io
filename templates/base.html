@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <title>{% block title %}Y-CTF{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ get_url(path="css/main.css") | safe }}" />
-  <link rel="preload" href="{{ get_url(path="fonts/JetBrainsMono-VariableFont_wght.ttf") | safe }}" as="font" type="font/ttf" crossorigin>
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
-  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+  <link rel="stylesheet" href="{{ get_url(path='css/main.css') | safe }}" />
+  <link rel="preload" href="{{ get_url(path='fonts/JetBrainsMono-VariableFont_wght.ttf') | safe }}" as="font" type="font/ttf" crossorigin>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
   <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.basic.min.js" crossorigin="anonymous"></script>
-  <script src="{{ get_url(path="js/main.js") | safe }}" defer></script>
-  <script src="{{ get_url(path="search_index.en.js") | safe }}" defer></script>
+  <script src="{{ get_url(path='js/main.js') | safe }}" defer></script>
+  <script src="{{ get_url(path='search_index.en.js') | safe }}" defer></script>
 </head>
 
 <body class="min-h-[100svh]">
@@ -21,32 +21,32 @@
         <div class="w-full h-0.5 bg-muted"></div>
         <div id="goto-results" class="w-full max-h-96 overflow-y-auto flex flex-col"></div>
     </div>
-    <a href="{{ get_url(path="/") }}" class="top-0 left-0 fixed z-10">
-        {# <picture>
-            <source srcset="{{ get_url(path='images/logo_dark_bold.png') | safe }}" media="(prefers-color-scheme: dark)">
-            <img src="{{ get_url(path='images/logo_light_bold.png') | safe }}" alt="logo" class="h-18 md:h-26 lg:h-32 p-2 md:p-4">
-        </picture> #}
-        <div class="h-18 md:h-26 lg:h-32 p-2 md:p-4">
-            <div class="w-full h-full flex items-center justify-center">
-                <div class="w-full h-full [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain invert-colors select-none">{{ load_data(path="static/images/logo-red.svg") | safe }}</div>
+
+    <div class="fixed top-0 left-0 w-full z-10 md:bg-transparent bg-background/80 backdrop-blur-md md:backdrop-blur-none shadow-sm md:shadow-none flex items-center justify-between px-4 md:px-8 h-18 md:h-26 lg:h-32">
+        <a href="{{ get_url(path='/') }}" class="flex items-center h-full">
+            <div class="h-18 md:h-26 lg:h-32 p-2 md:p-4">
+                <div class="w-full h-full flex items-center justify-center">
+                    <div class="w-full h-full [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain invert-colors select-none">{{ load_data(path='static/images/logo-red.svg') | safe }}</div>
+                </div>
             </div>
-        </div>
-    </a>
-    <div class="text-secondary-foreground mx-6 md:py-2 py-1 font-black text-lg lg:text-xl top-0 right-0 fixed w-18 md:w-26 h-18 md:h-26 lg:h-32 p-2 md:p-4 text-center flex items-center justify-center z-10">
-        {% for language_name, language in config.languages %}
-            {% if section %}
-                {% set e = section.translations %}
-            {% elif page %}
-                {% set e = page.translations %}
-            {% endif %}
-            {%if e %}
-                {% set translation = e | filter(attribute="lang", value=language_name) | first %}
-                {% if translation %}
-                    <a href="{{ translation.permalink }}" class="no-underline w-full">{{ language_name }}</a>
+        </a>
+        <div class="text-secondary-foreground font-black text-lg lg:text-xl text-center flex items-center justify-center gap-2">
+            {% for language_name, language in config.languages %}
+                {% if section %}
+                    {% set e = section.translations %}
+                {% elif page %}
+                    {% set e = page.translations %}
                 {% endif %}
-            {% endif %}
+                {%if e %}
+                    {% set translation = e | filter(attribute="lang", value=language_name) | first %}
+                    {% if translation %}
+                        <a href="{{ translation.permalink }}" class="no-underline px-2">{{ language_name }}</a>
+                    {% endif %}
+                {% endif %}
             {% endfor %}
+        </div>
     </div>
+
     <main id="scroll-element"><div class="mt-24 mx-4 mb-24 sm:mx-0">{% block content %} {% endblock %}</div></main>        
     <div class="bg-secondary text-primary-foreground w-fit fixed bottom-4 float-right right-8 transition-all duration-200 opacity-0"
         title="Scroll to top" id="scroll-to-top">
