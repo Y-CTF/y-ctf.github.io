@@ -7,6 +7,15 @@ location = "HEIG-VD, G03"
 type = "meeting"
 
 [[events]]
+title = { en = "Pizz'Hack", fr = "Pizz'Hack" }
+description = { en = "Pizza night and CTF challenges on HTB, root-me and other platforms. Come solve as a team in a friendly atmosphere!", fr = "Soirée pizza et challenges CTF sur HTB, root-me et autres plateformes. Venez solve en équipe dans une ambiance conviviale !" }
+start_date = "2025-11-13T18:00:00+01:00"
+end_date = "2025-11-13T22:00:00+01:00"
+location = "HEIG-VD, Chillout?"
+type = "meetup"
+time_tbd = true
+
+[[events]]
 title = { en = "Black Alps CTF 2025", fr = "Black Alps CTF 2025" }
 description = { en = "Cybersecurity conference with CTF challenges", fr = "Conférence cybersécurité avec son CTF" }
 start_date = "2025-11-21T18:45:00+01:00"

@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 start: checkbox.dataset.eventStart,
                 end: checkbox.dataset.eventEnd,
                 location: checkbox.dataset.eventLocation,
-                description: checkbox.dataset.eventDescription
+                description: checkbox.dataset.eventDescription,
+                timeTbd: checkbox.dataset.timeTbd === 'true'
             }));
         },
 
@@ -88,6 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const start = new Date(event.start);
             const end = new Date(event.end);
 
+            // Add TBD note to description if time is TBD
+            const description = event.timeTbd
+                ? `Time: TBD\\n\\n${event.description}`
+                : event.description;
+
             return [
                 'BEGIN:VEVENT',
                 `UID:${Date.now()}-${index}@yctf.ch`,
@@ -95,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `DTSTART:${UTILS.formatDate(start)}`,
                 `DTEND:${UTILS.formatDate(end)}`,
                 `SUMMARY:${event.title}`,
-                `DESCRIPTION:${event.description}`,
+                `DESCRIPTION:${description}`,
                 `LOCATION:${event.location}`,
                 'END:VEVENT'
             ].join('\r\n');
@@ -186,7 +192,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const startDate = UTILS.formatDate(event.start);
             const endDate = UTILS.formatDate(event.end);
 
-            return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
+            // Add TBD note to description if time is TBD
+            const description = event.timeTbd
+                ? `Time: TBD\n\n${event.description}`
+                : event.description;
+
+            return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(event.location)}`;
         },
 
         openEvent: (button) => {
@@ -195,7 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 start: new Date(button.dataset.eventStart),
                 end: new Date(button.dataset.eventEnd),
                 location: button.dataset.eventLocation,
-                description: button.dataset.eventDescription
+                description: button.dataset.eventDescription,
+                timeTbd: button.dataset.timeTbd === 'true'
             };
 
             const url = GOOGLE_CALENDAR.buildUrl(eventData);
