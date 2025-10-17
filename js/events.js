@@ -158,12 +158,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSelectionState = () => {
         const selectedCount = UTILS.getSelectedCount();
-        const totalCount = ELEMENTS.eventCheckboxes.length;
+        const visibleCheckboxes = Array.from(ELEMENTS.eventCheckboxes).filter(checkbox => {
+            const card = checkbox.closest('.event-card');
+            return card && card.style.display !== 'none';
+        });
+        const visibleCount = visibleCheckboxes.length;
+        const visibleSelectedCount = visibleCheckboxes.filter(cb => cb.checked).length;
 
         ELEMENTS.selectedCountSpan.textContent = selectedCount;
         ELEMENTS.downloadBtn.disabled = selectedCount === 0;
-        ELEMENTS.selectAllCheckbox.indeterminate = selectedCount > 0 && selectedCount < totalCount;
-        ELEMENTS.selectAllCheckbox.checked = selectedCount === totalCount;
+        ELEMENTS.selectAllCheckbox.indeterminate = visibleSelectedCount > 0 && visibleSelectedCount < visibleCount;
+        ELEMENTS.selectAllCheckbox.checked = visibleCount > 0 && visibleSelectedCount === visibleCount;
 
         updateSelectAllVisual();
     };
@@ -171,8 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleSelectAll = () => {
         const shouldCheck = ELEMENTS.selectAllCheckbox.checked;
         for (const checkbox of ELEMENTS.eventCheckboxes) {
-            checkbox.checked = shouldCheck;
-            updateCheckboxVisual(checkbox);
+            const card = checkbox.closest('.event-card');
+            if (card && card.style.display !== 'none') {
+                checkbox.checked = shouldCheck;
+                updateCheckboxVisual(checkbox);
+            }
         }
         updateSelectionState();
     };
