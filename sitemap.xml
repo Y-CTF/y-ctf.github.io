@@ -4,6 +4,12 @@
         <loc>https://yctf.ch/</loc>
     </url>
     <url>
+        <loc>https://yctf.ch/@/</loc>
+    </url>
+    <url>
+        <loc>https://yctf.ch/@/identite/</loc>
+    </url>
+    <url>
         <loc>https://yctf.ch/about/</loc>
     </url>
     <url>
