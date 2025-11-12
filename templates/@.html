@@ -1,0 +1,29 @@
+{% extends "prose.html" %}
+
+{% block article %}
+  <h1>{{ section.title }}</h1>
+
+  {% if section.pages %}
+  <div class="redirects-list">
+    <h2>Available Redirects</h2>
+    <ul>
+    {% for page in section.pages | sort(attribute="title") %}
+      {% if page.extra.redirect_url %}
+      <li>
+        <code>{{ page.path }}</code>
+        <span>→</span>
+        <a href="{{ page.extra.redirect_url }}" target="_blank">{{ page.extra.redirect_url | replace(from="https://", to="") | replace(from="http://", to="") | split(pat="/") | first }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% else %}
+  <p>No redirects configured.</p>
+  {% endif %}
+
+  {% if section.content %}
+  {{ section.content | safe }}
+  {% endif %}
+</div>
+{% endblock article %}

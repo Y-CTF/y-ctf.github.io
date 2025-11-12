@@ -1,0 +1,13 @@
+{% extends "prose.html" %}
+
+{% block article %}
+<div class="prose">
+  <h1>Redirecting...</h1>
+  <p>You are being redirected to <a href="{{ page.extra.redirect_url }}">{{ page.extra.redirect_url }}</a></p>
+  <script>
+  window.onload = function() {
+    window.location.href = '{{ page.extra.redirect_url | safe }}'
+  }
+  </script>
+</div>
+{% endblock article %}
